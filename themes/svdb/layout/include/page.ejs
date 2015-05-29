@@ -1,0 +1,33 @@
+<header class="site-head">
+  <div class="vertical">
+    <div class="site-head-content inner">
+      <% if (theme.logo) { %> <a class="blog-logo" href="<%- config.root %>"><img src="<%- theme.logo %>" alt="<%- config.title %>"/></a> <% } %>
+      <h1 class="blog-title">
+        <a href="/" alt="<%- config.title %>"><%- config.title %></a>
+      </h1>
+      <p class="blog-description"><%- config.description %></p>
+    </div>
+  </div>
+</header>
+
+<main class="content" role="main">
+  <article class="post">
+    <h1 class="post-title">
+      <a href="<% permalink = config.url + config.root + post.path %>" alt="<%- post.title %>"><%- post.title %></a>
+    </h1>
+    <span class="post-meta">
+      <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
+        <%- full_date(new Date(post.date), 'dddd, MMMM Do YYYY') %> at <%- full_date(new Date(post.date), 'H:mm') %>
+      </time>
+      <% if (post.updated) { %><br />Updated on
+        <time datetime="<%= date_xml(post.updated) %>" itemprop="datePublished">
+          <%- full_date(new Date(post.updated), 'dddd, MMMM Do YYYY') %> at <%- full_date(new Date(post.updated), 'H:mm') %>
+        </time>
+      <% } %>
+      <% if (post.tags && post.tags.length){ %> on <% post.tags.forEach(function(tag) { %><a href='<%= config.root + tag.path %>' style='margin:0 5px;'><%= tag.name %></a><% }); %><% } %>
+    </span>
+    <section class="post-content">
+      <%- post.content %>
+    </section>
+  </article>
+</main>

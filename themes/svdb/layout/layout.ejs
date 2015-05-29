@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- partial('include/head') %>
+<% if (typeof page.title == 'undefined') { %>
+<body class="home-template">
+<% } else { %>
+<body class="post-template">
+<% } %>
+<%- body %>
+<%- partial('include/footer') %>
+<%- partial('include/after_all') %>
+</body>
+</html>
