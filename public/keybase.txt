@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/svdb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://svdb.co
+  * I am svdb (https://keybase.io/svdb) on keybase.
+  * I have a public key with fingerprint F5F5 C015 160B 70AE 5FD0  0C12 13DB CAA1 2633 81A7
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "f5f5c015160b70ae5fd00c1213dbcaa1263381a7",
+            "host": "keybase.io",
+            "key_id": "13DBCAA1263381A7",
+            "uid": "21f09d8f1de4af63ba93535b09eee100",
+            "username": "svdb"
+        },
+        "merkle_root": {
+            "ctime": 1413892288,
+            "hash": "5719a64231bd25e73ccd401abab516d5fc270ee8ab55b7372b895603d024dbbb69d33959dfd95ec3eb072301271041a4918b9b41fd0ea68c0c0d9c83dcdc985f",
+            "seqno": 82295
+        },
+        "service": {
+            "hostname": "svdb.co",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1413892330,
+    "expire_in": 157680000,
+    "prev": "361d0b8d539b013f5c31a2b4d5c58ba0a221de125118dc43da639c8626c1c594",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFVkntQVFUcx1lelqNBIIaFylwdlFrpnnvuE1EEEUEGUobQyKR77jkLi7h32115
+ykiUGTCJ4xBClkFQUBHJhkYDKUbOKJgW+OCRxlATkSmYhqmh3cvQpOev8/j8fr/v
+9/c7e2e7ubgafAe7aoLgq/WG7lHkkhQd83s+hVScS4XmU0qmmVgc+s4ibyNUKLWV
+5CLZTkLMaqBFxSQkwx44zRipLGKzm1WLRtEhQghDFRh1XA82mS1pxGa1mfVclIkz
+cQoNOMDTSKBlwpkwTSuAARAjRZYBw0MoAlnQUqardsdDVampnKlmrN0CGBW5OiJi
+mo/Q+e1TDwww0RIWTQATVjbxEMkS5CCHaIkQAmhaB+3ENm3JnoWRrnUbsW3NJKk2
+VZ0yrDjM+jNgARQlhhFFTY1sT9cCOAFIMs8yECDMcESAioJZGshIRponzJkURqAJ
+EbUjhwQoMEiUOJ6GmGZYjBDiJQyhxEnYhCWOKJAgWmAgDRgB0CyQWQmISEIs0NpC
+ZF5UaIXGkiJCrGBFEjmTJt9OXrGoVKjIMBJXoB9tWWaF6LL1jj1gLETRW2a1qQ5V
+UTO1y3SHwxqq23XkWnUom6DU6fBUZK61YG1UD84SaOjDrYCQNlIkx2q2kVSzTnAC
+L9La0uuQLC0n5AGmkYg5KCEaQG3aEMgMYjGncCKSaZlhtNEAhgNAxAoLscxDzSDP
+8ApQOIn93yCj6ZTTdC/mNIvs2G4jVEGxa4C7i8HVxdPDVf+sLjMf9f7vB9e1eLu8
+WfjVnP7AR346c7jUr4R3ryiKudNcE9z63e7GiZv1MHp+UtbdQ+uOPhm3Xgh/pvv4
+JePH7Rcjr51PONFNfLqfqw3N6IjKCV48kpD4K2nr+KstLM4Y/+yG/Ji5gRWta91d
+DS+84/VB+LE+/+89l1bu7Sh7uvdUbNx7B2NX7u/xuJRy+1TMMr9/Nilv/bZ50abK
+1076rOi5smO14cM8JjO78pyxs2v54mj3BcEZ9+JLZ1ZP+K8LPHy2eYazc9eWmmNL
+fD/q8grYN1mQ89QbaxbOe6Jrn1t132BcSrb4fuMwTtjpdf5WchD+Y95lY23uUBds
+aBg/OdjryBtbsaPpkPPk82VVV0f/HK1e5e1aE3R1D4nveOzOaevrWYXfDi98N2N2
+X3P97hHPQo8F8tmcsZTh8vK+xssbN1S+9PX+BNOX7cNRaLK9s+V6VWJ4keXC0cTB
+Kve64R6foVPHnfUvlqeON6+t+tG30dm/ZFf4hdalfzuty0aLSgZXChclds6ab76Y
+F6umD52OiA+r6NvzmXfTIr+SuR0/AENx55kZ9UeSfzkycH38RnZJ3qf99s1v36A2
+tvgbzvExTHFP0ORE0Ym76WUoZ6T0fNJQsiZgoMk5MKvo8YazzoNVrWEmaef89SuN
+Ywfq2tSb8W5bXp6ldvre8rjmfyWy/t6qnv54tfHznw/c7yVdn/SfWH6fvR1wZaCl
+svpf
+=z8VH
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/svdb
+
+==================================================================
