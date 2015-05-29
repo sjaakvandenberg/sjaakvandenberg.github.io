@@ -161,4 +161,4 @@ server:
 deploy:
   type: git
   repo: git@github.com:sjaakvandenberg/sjaakvandenberg.github.io.git
-  branch: gh-pages
+  branch: master
