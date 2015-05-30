@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://svdb.co/README.html</loc>
+    <lastmod>2015-05-30T10:28:39.928Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://svdb.co/posts/2015/05/28/the-rise-of-the-autobots/</loc>
     <lastmod>2015-05-28T11:45:31.678Z</lastmod>
   </url>
