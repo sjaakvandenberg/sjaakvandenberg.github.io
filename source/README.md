@@ -1,8 +1,8 @@
 # svdb.co
 
-This is the repo for my personal website, [svdb.co](http://svdb.co). It uses Hexo to serve the content. The theme used is a fork of the original Casper theme for Ghost.
+This is the repo for my personal website, [svdb.co](http://svdb.co). It uses Hexo to serve the content. The theme used is a fork of the original [Casper theme](https://github.com/TryGhost/Casper) for [Ghost](https://github.com/tryghost/ghost/).
 
-- [@svdb](https://twitter.com/svdb)
+&mdash; [@svdb](https://twitter.com/svdb)
 
 ## Original Casper Copyright & License
 
@@ -13,6 +13,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[Ghost]: http://github.com/tryghost/ghost/
-[Ghost Casper]: https://github.com/TryGhost/Casper
