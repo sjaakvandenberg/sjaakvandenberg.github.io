@@ -21,8 +21,8 @@ This contains the files used to generate `./public`. Run `npm i` to install loca
 | Command                              | Description                          |
 |--------------------------------------|--------------------------------------|
 | `git checkout source`                | change to `source` branch            |
-| `git add *`                          | add files to git                     |
-| `git commit -am "message"`           | commit files to git                  |
+| `git status`                         | display git status                   |
+| `git commit -am "message"`           | add and commit files to git          |
 | `git push -u origin source`          | push files to `source` branch        |
 
 &mdash; [@svdb](https://twitter.com/svdb)
