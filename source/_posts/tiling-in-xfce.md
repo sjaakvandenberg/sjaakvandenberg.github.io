@@ -1,6 +1,6 @@
 title: Tiling in XFCE
 date: 2015-07-19 09:44:40
-intro: A Python script to improve XFCE with custom tiling
+intro: A Python script to improve XFCE with custom tiling.
 ---
 <img class="noshadow" src="xfce-mouse.svg" alt="XFCE logo">
 

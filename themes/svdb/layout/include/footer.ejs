@@ -1,4 +1,5 @@
 <footer class="site-footer">
+  <p class="blog-pubkey"><%- config.pubkey %></p>
   <% if (config.rss || config.feed) {  %>
   <a class="subscribe icon-feed" href="<%= (config.rss || config.feed.path) %>"><span class="tooltip">Subscribe!</span></a>
   <% } %>

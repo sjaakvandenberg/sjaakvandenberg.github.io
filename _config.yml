@@ -5,9 +5,10 @@
 # Site
 title: svdb.co
 subtitle: Rants and musings
-description: My name is Sjaak van den Berg and I'm a developer working with blockchain technology. You can reach me on Twitter via <a href='https://twitter.com/svdb'>@svdb</a>.
+description: My name is Sjaak van den Berg and I'm a developer working with Ruby and JavaScript. You can reach me on Twitter via <a href='https://twitter.com/svdb'>@svdb</a>.
 author: Sjaak van den Berg
 email: mail@svdb.co
+pubkey: 13DB CAA1 2633 81A7
 twitter: svdb
 language: en
 timezone: Europe/Amsterdam
