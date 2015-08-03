@@ -742,10 +742,7 @@ margin on the iframe, cause it breaks stuff. */
   padding-bottom: 10px
   font-size: 5rem
   letter-spacing: -1px
-  // font-weight: bold
   font-family: 'Open Sans', sans-serif
-  // font-family: 'Roboto Slab'
-  // font-family: 'Source Code Pro'
   font-weight: 500
   text-shadow: 0 1px 6px rgba(black, .5)
 
@@ -774,7 +771,6 @@ margin on the iframe, cause it breaks stuff. */
   text-shadow: 0 1px 3px rgba(black .35)
 
   a
-    // color: lighten(body-link, 35%)
     color: body-link
     text-decoration: none
 
@@ -1210,9 +1206,10 @@ pre .chunk
     text-decoration: none
 
   .blog-pubkey
+    color: lighten(body-font, 20%)
     font-family: Source Code Pro, monospace, sans-serif
     font-weight: 500
-    margin: 0
+    margin: 0 0 0.5em 0
 
 .poweredby .icon-hexo
   font-weight: 700
@@ -1266,20 +1263,22 @@ pre .chunk
 
 /* CSS tooltip saying 'Subscribe!' - initially hidden */
 .tooltip
+  background: body-font
+  color: body-background
   opacity:0
+
+  border-radius: 3px
+  box-shadow: 0 1px 4px rgba(black, 0.1)
   display: inline-block
+  left: -21px
   padding: 4px 8px 5px 8px
   position: absolute
   top: -23px
-  left: -21px
-  color: body-background
+  transition: opacity 0.3s ease, top 0.3s ease
+
   font-size: 1.1rem
   line-height: 1em
   text-align: center
-  background: body-font
-  border-radius: 3px
-  box-shadow: 0 1px 4px rgba(black, 0.1)
-  transition: opacity 0.3s ease, top 0.3s ease
 
   /* The little chiclet arrow under the tooltip, pointing down */
   &:after
@@ -1292,8 +1291,8 @@ pre .chunk
     bottom: -4px
     left: 50%
     margin-left: -5px
-    z-index: 220
     width: 0
+    z-index: 220
 
 // ==========================================================================
 // 9. Media Queries - 640px - 960px or 40em - 60em (Tablet)
@@ -1364,16 +1363,16 @@ pre .chunk
 
   .inner
   .pagination
-    width: auto
     margin-left: 16px
     margin-right: 16px
+    width: auto
 
   .post
-    width: auto
-    margin-left: 16px
-    margin-right: 16px
     font-size: 0.8em
     line-height: 1.6em
+    margin-left: 16px
+    margin-right: 16px
+    width: auto
 
   .site-head
     padding: 3% 0
@@ -1392,8 +1391,9 @@ pre .chunk
   h1
   h2
     font-size: 3rem
-    line-height: 1.1em
     letter-spacing: -1px
+    line-height: 1.1em
+    text-align: left
 
   h3
     font-size: 2.8rem
@@ -1423,15 +1423,15 @@ pre .chunk
 
   .older-posts,
   .newer-posts
-    position: static
     margin: 10px 0
+    position: static
 
   .page-number
     display: block
 
   .site-footer
-    margin-top: 6rem
     font-size: 1.1rem
+    margin-top: 6rem
 
 // ==========================================================================
 // 11. Media Queries - Print
@@ -1448,28 +1448,28 @@ pre .chunk
     display: none
 
   .site-head
-    position: relative
-    display: table
-    width: 100%
-    // height: auto
-    margin-bottom: 0rem
-    text-align: left
-    padding: 0 0 4% 0
     background: none
     border-bottom: 2px solid shade-gray
+    display: table
+    // height: auto
+    margin-bottom: 0rem
+    padding: 0 0 4% 0
+    position: relative
+    text-align: left
+    width: 100%
 
   .blog-title
     // color: header-title
-    margin: 10px 0 10px 0
-    padding-bottom: 0
-    font-size: 5rem
-    letter-spacing: -1px
-    // font-weight: bold
     font-family: 'Open Sans', sans-serif
+    font-size: 5rem
+    font-weight: 500
+    margin: 10px 0 10px 0
+    letter-spacing: -1px
+    padding-bottom: 0
+    text-shadow: none
+    // font-weight: bold
     // font-family: 'Roboto Slab'
     // font-family: 'Source Code Pro'
-    font-weight: 500
-    text-shadow: none
 
     a
       color: dark-gray
@@ -1477,12 +1477,12 @@ pre .chunk
 
   .blog-description
     color: shade-gray
-    margin: 0
-    font-size: 1.8rem
-    line-height: 1.5em
-    font-weight: 300
     font-family: 'Open Sans'
+    font-size: 1.8rem
+    font-weight: 300
     letter-spacing: 0
+    line-height: 1.5em
+    margin: 0
     text-shadow: none
 
     a
@@ -1491,14 +1491,14 @@ pre .chunk
 
   body
     background: body-background
-    outline: none
-    height: 100%
-    max-height: 100%
-    overflow-x: hidden
+    color: body-font
     font-family: 'Droid Serif', Georgia, serif
     font-size: 1.4rem
+    height: 100%
     line-height: 1.3em
-    color: body-font
+    max-height: 100%
+    outline: none
+    overflow-x: hidden
 
   a
     color: black
@@ -1515,14 +1515,14 @@ pre .chunk
 
   h1
     font-size: 3.5rem
-    line-height: 1.2em
     letter-spacing: -2px
+    line-height: 1.2em
     text-indent: -3px
 
   h2
     font-size: 3rem
-    line-height: 1.2em
     letter-spacing: -1px
+    line-height: 1.2em
     text-indent: -2px
 
   h3
@@ -1538,15 +1538,15 @@ pre .chunk
     font-size: 1.9rem
 
   blockquote
+    border-left: shade-gray 0.4em solid
     -moz-box-sizing: border-box
     box-sizing: border-box
     margin: 1.6em 0 1.6em 0em
     padding: 0 0 0 1.6em
-    border-left: shade-gray 0.4em solid
 
   .inner
-    width: 98%
     max-width: 98%
+    width: 98%
 
   .post
     width: 98%

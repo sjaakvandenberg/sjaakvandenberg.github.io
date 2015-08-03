@@ -5,7 +5,7 @@
   <subtitle><![CDATA[Rants and musings]]></subtitle>
   <link href="//atom.xml" rel="self"/>
   <link href="http://svdb.co//"/>
-  <updated>2015-07-20T10:23:25.909Z</updated>
+  <updated>2015-08-01T17:10:25.625Z</updated>
   <id>http://svdb.co//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://svdb.co/posts/2015/07/19/tiling-in-xfce/"/>
     <id>http://svdb.co/posts/2015/07/19/tiling-in-xfce/</id>
     <published>2015-07-19T07:44:40.000Z</published>
-    <updated>2015-07-20T10:23:25.909Z</updated>
+    <updated>2015-08-01T17:10:25.625Z</updated>
     <content type="html"><![CDATA[<p><img class="noshadow" src="xfce-mouse.svg" alt="XFCE logo"></p>
 <blockquote>
 <p>Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.</p>
