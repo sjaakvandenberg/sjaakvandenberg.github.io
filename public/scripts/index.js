@@ -1,1 +1,0 @@
-(function(t){"use strict";t(document).ready(function(){t(".post-content").fitVids()})})(jQuery);
