@@ -117,4 +117,4 @@ Ik schrijf een korte, driemaandelijkse nieuwsbrief waarin ik het nieuws in de we
 
 Voor veelgestelde vragen, kun je terecht op de [Wiki pagina van bitcoin.org](https://en.bitcoin.it/wiki/FAQ). Voor nieuwsartikelen over bitcoin, kijk [hier](/nieuws). Anders kun je me ook [emailen](&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#105;&#108;&#64;&#115;&#118;&#100;&#98;&#46;&#99;&#111;) voor vragen.
 
-<iframe width="1500" height="844" src="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+{% youtube Gc2en3nHxA4 %}

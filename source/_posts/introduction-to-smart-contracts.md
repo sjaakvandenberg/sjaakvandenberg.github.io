@@ -1,6 +1,7 @@
 title: Introduction to Smart Contracts
 date: 2014-10-16 10:53:26
 intro: A look at traditional contracts as bearers of rules in light of smart contracts as autonomous executors of rules.
+comments: true
 ---
 ![Last Will](will.jpg)
 
