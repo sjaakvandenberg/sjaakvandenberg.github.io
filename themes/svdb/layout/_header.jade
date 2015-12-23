@@ -1,0 +1,11 @@
+if theme.logo
+  a(href= config.root)
+    img(src= theme.logo, alt= config.title, title= config.title)
+h1
+  a(href= config.root, alt= config.title, title= config.title)= config.title
+!= markdown(config.description)
+nav
+  ul
+    each url, label in config.menu
+      li
+        a(href= url, alt= label)= label
