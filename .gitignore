@@ -6,3 +6,4 @@ node_modules/
 .deploy*
 /public/
 .settings/
+source/_drafts/
