@@ -1,1031 +1,838 @@
-// ==========================================================================
+// ===========================================================================
 // Table of Contents
-// ==========================================================================
+// ===========================================================================
 
-//  0.  Includes
-//  1.  Icons
-//  2.  General
-//  3.  Utilities
-//  4.  General
-//  5.  Single Post
-//  6.  Third Party Elements
-//  7.  Pagination
-//  8.  Footer
-//  9.  Media Queries (Tablet)
-//  10. Media Queries (Mobile)
-//  11. Media Queries (Print)
+//   0. Settings
+//   0.0 Imports
+//   0.1 Webfonts
+//   0.2 Typography
+//   0.3 Colors
+//   0.4 Defaults
+//   0.5 Media Queries
+//   1. Basics
+//   2. Header
+//   3. Main
+//   4. Typography
+//   5. Special Sections
+//   6. Media Queries
+//   7. Code Theme
 
-// ==========================================================================
-// 0. Includes - Ground zero
-// ==========================================================================
+// ===========================================================================
+// 0. Settings
+// ===========================================================================
 
-@import('_settings')
-@import('normalize.css')
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic')
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700,600,500,300')
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic')
+// 0.0 Imports
 
-// ==========================================================================
-// 1. Icons - Sets up the icon font and respective classes
-// ==========================================================================
+@import 'normalize.css'
+@import '_*'
 
-@charset 'UTF-8'
+// 0.1 Webfonts
 
-// import the font file with the icons in it
-@font-face
-  font-family: 'icons'
-  src:url('../fonts/icons.eot')
-  src:url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/icons.woff') format('woff'),
-    url('../fonts/icons.ttf') format('truetype'),
-    url('../fonts/icons.svg#icons') format('svg')
-  font-weight: normal
-  font-style: normal
+$font-directory = '../fonts/'
 
-[data-icon]:before
-  content: attr(data-icon)
+webfont('Droid Serif', 'droidserif/400', 400, normal)
+webfont('Droid Serif', 'droidserif/700', 700, normal)
+webfont('Droid Serif', 'droidserif/400i', 400, italic)
+webfont('Droid Serif', 'droidserif/700i', 700, italic)
 
-[data-icon]:before
-[class^='icon-']:before
-[class*=' icon-']:before
-  font-family: 'icons'
-  font-style: normal
-  font-variant: normal
-  font-weight: normal
-  line-height: 1
-  speak: none
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  vertical-align: middle
+webfont('Open Sans', 'opensans/300', 300, normal)
+webfont('Open Sans', 'opensans/400', 400, normal)
+webfont('Open Sans', 'opensans/600', 600, normal)
+webfont('Open Sans', 'opensans/700', 700, normal)
+webfont('Open Sans', 'opensans/800', 800, normal)
+webfont('Open Sans', 'opensans/300i', 300, italic)
+webfont('Open Sans', 'opensans/400i', 400, italic)
+webfont('Open Sans', 'opensans/600i', 600, italic)
+webfont('Open Sans', 'opensans/700i', 700, italic)
+webfont('Open Sans', 'opensans/800i', 800, italic)
 
-.icon-twitter:before
-  content: 'a'
+webfont('Fira Mono', 'fira/400', 400, normal)
+webfont('Fira Mono', 'fira/500', 500, normal)
+webfont('Fira Mono', 'fira/700', 700, normal)
 
-.icon-feed:before
-  content: 'b'
+// 0.2 Typography
 
-.icon-pinterest:before
-  content: 'c'
+      $title-font = 'Open Sans', sans-serif
+    $title-weight = 400
+    $heading-font = 'Open Sans', sans-serif
+  $heading-weight = 700
+     $button-font = 'Open Sans', sans-serif
+      $small-font = 'Droid Serif', Georgia, serif
+    $small-weight = 400
+       $body-font = 'Droid Serif', Georgia, serif
+     $body-weight = 400
+       $code-font = 'Fira Mono', monospace, sans-serif
+     $code-weight = 400
 
-.icon-linkedin:before
-  content: 'd'
+// 0.3 Colors
 
-.icon-link:before
-  content: 'e'
+   $red-orange = hsla(16, 98%, 59%, 1)
+       $orange = hsla(31, 98%, 52%, 1)
+$yellow-orange = hsla(39, 99%, 55%, 1)
+       $yellow = hsla(53, 100%, 62%, 1)
+ $green-yellow = hsla(80, 72%, 54%, 1)
+        $green = hsla(119, 78%, 59%, 1)
+   $blue-green = hsla(183, 70%, 61%, 1)
+         $blue = hsla(205, 93%, 54%, 1)
+  $blue-purple = hsla(245, 73%, 68%, 1)
+       $purple = hsla(301, 67%, 57%, 1)
+   $red-purple = hsla(332, 82%, 60%, 1)
+          $red = hsla(356, 100%, 63%, 1)
 
-.icon-key:before
-  content: 'f'
+        $white = hsla(0, 0, 98%, 1)
+         $gray = hsla(0, 0, 45%, 1)
+        $black = hsla(0, 0, 8%, 1)
 
-.icon-location:before
-  content: 'g'
+   $light-gray = lighten($gray, 95%)
+   $shade-gray = lighten($gray, 35%)
+    $dark-gray = darken($gray, 35%)
 
-.icon-github:before
-  content: 'h'
+   $light-blue = lighten($blue, 25%)
+   $shade-blue = darken($blue, 25%)
+    $dark-blue = darken($blue, 70%)
+  $darker-blue = darken($blue, 80%)
 
-.icon-gplus:before
-  content: 'i'
+// 0.4 Defaults
 
-.icon-heart:before
-  content: 'j'
+$author = 'Sjaak van den Berg'
 
-.icon-facebook:before
-  content: 'k'
+$title-color = $blue
+$description-color = $white
+$header-link-color = $blue
+$link-hover-header-color = $blue
 
-.icon-dribbble:before
-  content: 'l'
+$body-color = $black
+$post-meta-color = $gray
+$body-link-color = $black
+$body-link-hover-color = $blue
 
-.icon-dropbox:before
-  content: 'm'
+$background-color = $light-gray
+$accent-color = $shade-gray
+$quote-accent-color = $blue
 
-.icon-attach:before
-  content: 'n'
+$background-header-path = '../images/background.jpg'
 
-.icon-email:before
-  content: 'p'
+$footer-pubkey-color = $gray
 
-.icon-bitcoin:before
-  content: 'q'
+$default-padding = 20px
 
-.icon-hexo:before
-  content: 'r'
+// 0.5 Media Queries
 
-.icon-comment:before
-  content: 's'
+$tablet = 'only screen and (max-width: 60em)'
+$phone = 'only screen and (max-width: 40em)'
 
-.icon-home:before
-  content: 'o'
-
-.icon-lock:before
-  content: 't'
-
-.icon-play:before
-  content: 'u'
-
-.icon-vimeo:before
-  content: 'v'
-
-.icon-left-open:before
-  content: 'w'
-
-.icon-right-open:before
-  content: 'z'
-
-.icon-pause:before
-  content: 'x'
-
-// ==========================================================================
-// 2. General - Setting up some base styles
-// ==========================================================================
+// ===========================================================================
+// 1. Basics
+// ===========================================================================
 
 html
-  height: 100%
-  max-height: 100%
-  font-size: 62.5%
+  font-size 62.5%
 
 body
-  background: body-background
-  outline: none
-  height: 100%
-  margin: 0
-  max-height: 100%
-  overflow-x: hidden
-  font-family: 'Droid Serif', Georgia, serif
-  font-size: 1.8rem
-  line-height: 1.6em
-  color: body-font
-
-::-moz-selection
-  color: body-font
-  background: body-link
-  text-shadow: none
-
-::selection
-  color: body-font
-  background: body-link
-  text-shadow: none
-
-h1
-h2
-h3
-h4
-h5
-h6
-  text-rendering: optimizeLegibility
-  line-height: 1
-  margin-top: 0
-  font-family: 'Open Sans'
-  font-weight: 700
-
-  a
-    color: body-font
-
-h1
-  font-size: 5rem
-  line-height: 1.2em
-  letter-spacing: -2px
-  text-indent: -3px
-
-h2
-  font-size: 3.9rem
-  line-height: 1.2em
-  letter-spacing: -1px
-  text-indent: -2px
-
-h3
-  font-size: 3.3rem
-
-h4
-  font-size: 2.8rem
-
-h5
-  font-size: 2.4rem
-
-h6
-  font-size: 2rem
+  color $body-color
+  margin 0
+  height 100vh
+  flex-direction column
+  font-family $body-font
+  font-size 1.62rem
+  font-weight $body-weight
+  line-height 1.6em
 
 a
-  color: body-link
-  transition: color ease 0.3s
-  text-decoration: none
+  color $body-link-color
+  text-decoration underline
+  &:hover
+    transition color .3s ease
 
-  /* Change color for all links on hover */
-  &:hover:not(.btn):not(.subscribe)
-    color: body-link-hover
-    // text-decoration: underline
-    // padding-bottom: 1px
-    // border-bottom: 2px solid body-link-hover
+::-moz-selection
+::selection
+  color $body-color
+  background $blue
+  text-shadow none
+
+header,
+main
+  overflow-y auto
+  -webkit-overflow-scrolling touch
+  padding 20px
+
+// ===========================================================================
+// 2. Header
+// ===========================================================================
+
+header
+  // Background settings
+  background-image url($background-header-path)
+  background-position top left
+  background-repeat no-repeat
+  background-size cover
+  flex 1
+  text-align center
+  // Link styling
+  a
+    color $header-link-color
+    text-decoration none
+    &:hover
+      text-decoration underline
+  // Blog title
+  h1
+    color $title-color
+    font-family $title-font
+    font-size 5rem
+    font-weight $title-weight
+    letter-spacing -1px
+    text-shadow 0 1px 6px hsla(0, 0, 0, .5)
+    a:hover
+      text-decoration none
+  // Logo
+  img
+    line-height 0
+    margin 0 auto
+    max-height 100px
+    width auto
+  // Blog description
+  p
+    color $description-color
+    font-family $body-font
+    font-size 1.62rem
+    font-weight $body-weight
+    letter-spacing 0
+    margin 0
+    text-shadow 0 1px 3px hsla(0, 0, 0, .35)
+  // Navigation list
+  nav ul
+    list-style none
+    margin 0
+    padding 0
+    li
+      display inline-block
+      padding 12px 0 12px 12px
+      &:after
+        content '·'
+        padding-left 12px
+      &:last-child
+        &:after
+          content ''
+
+// ===========================================================================
+// 3. Main
+// ===========================================================================
+
+main
+  // Background and text flow
+  background $background-color
+  flex 2
+  hypens auto
+  overflow-x hidden
+  padding 20px // Smaller padding on small screens
+  text-align left
+  word-break normal
+  word-wrap break-word
+  // Links to articles
+  a.article
+    color $body-color
+    text-decoration none
+    // No border-bottom on last article
+    &:last-of-type
+      article
+        border none
+        &:after
+          background none
+          border none
+          box-shadow none
+          padding-bottom 20px
+    &:hover h2
+      color $body-link-hover-color
+      transition color .3s ease
+  .page-title
+    color $shade-gray
+    font-family $body-font
+    font-size 1.62rem
+    font-style italic
+    font-weight $body-weight
+    margin 0
+    padding-bottom 16px
+    text-align center
+  .post-meta
+    color $shade-gray
+    display inline-block
+    font-family $small-font
+    font-weight $small-weight
+    font-size 1.62rem
+    margin 16px 0 0 0
+  // Article list
+  article.item
+    border-bottom 1px solid hsla(0, 0, 0, .15)
+    color $body-color
+    padding 40px
+    text-align center
+    h2
+      color $body-color
+      margin 0
+    p.post-excerpt
+      font-size 1.62rem
+      line-height 1.6em
+      margin 16px 0 0 0
+    &:after
+      display block
+      content ''
+      width 7px
+      height 7px
+      // Circle border
+      border darken($background-color, 12%) 1px solid
+      position relative
+      top 45px
+      left 50%
+      margin-left -5px
+      // Inside the circle
+      background darken($background-color, 15%)
+      border-radius 100%
+      // Around the circle
+      box-shadow $background-color 0 0 0 5px
+  // Full article
+  article.full
+    padding-bottom 20px
+    h2
+      margin 0
+    ul
+      list-style none
+      padding 0
+    a
+      text-decoration underline
+      &:hover
+        color $body-link-hover-color
+    img
+      // Images are responsive by default
+      border-radius 3px
+      height auto
+      width 100%
+    // Blockquotes within articles
+    blockquote
+      box-sizing border-box
+      margin 1.6em 0 1.6em 0
+      padding 0 0 0 1.6em
+      border-left $quote-accent-color .4em solid
+      footer
+        text-align left
+        padding 0
+        border 0
+        background none
+        color $body-color
+        line-height 1.6em
+        font-size .9em
+      p
+        margin .8em 0
+        font-style italic
+      small
+        display inline-block
+        margin .8em 0 .8em 1.5em
+        font-size .9rem
+        color $light-gray
+        &:before
+          content '\2014 \00A0'
+      ol
+      ul
+        font-style italic
+      cite
+        font-weight bold
+        &:before
+          content '—'
+          padding 0 .3em
+        a
+          color $link-article-color
+          font-weight normal
+    .post-meta
+      padding-bottom 16px
+    // Images without shadows and round borders
+    .no-shadow
+      box-shadow none
+      border-radius 0
+    // Display logos small and next to each other
+    .logos
+      display inline-block
+      clear both
+      img
+        width auto
+    .left
+      float left
+    .right
+      float right
+    // Form styling
+    form
+      .form-column
+        display inline-block
+        text-align left
+        width 100%
+        input[type="name"]
+        input[type="email"]
+          width 100%
+        input
+        textarea
+          padding .5em .6em
+          margin 0
+          border 1px solid $light-gray
+          box-shadow inset 0 1px 3px $shade-gray
+          border-radius 2px
+          box-sizing border-box
+          overflow hidden
+        textarea
+          margin .5em .5em .5em 0
+        input[type="checkbox"]
+          margin .5em
+        label
+          margin-right .5em
+        textarea
+          width 100%
+        button
+          background blue
+          border 1px solid $shade-blue
+          box-shadow inset 0 0 0 1px blue, 0 1px 3px gray
+          border-radius 2px
+          box-sizing border-box
+          color white
+          font-family $button-font
+          letter-spacing 1px
+          margin .5em .5em .5em 0
+          padding .1em .6em
+          white-space nowrap
+          text-transform uppercase
+          text-shadow 0 -1px 1px $shade-blue
+    // Buttons
+    .btn
+      border none
+      font-size inherit
+      color $white
+      background none
+      cursor pointer
+      display inline-block
+      letter-spacing 1px
+      font-weight 700
+      outline none
+      position relative
+      transition all 0.3s
+      vertical-align middle
+
+      &:after
+        content ''
+        position absolute
+        z-index -1
+        transition all .3s
+
+    .small-button
+      background $blue
+      border-radius 2px
+      box-shadow 0 2px $shade-blue
+      color $white
+      font-family $button-font
+      font-size 1.4rem
+      font-weight 700
+      line-height 1.6
+      margin 0
+      border 1px solid $shade-blue
+      padding 0 5px
+      white-space nowrap
+
+      &:before
+        left 130%
+        top 0
+
+      &:hover
+        box-shadow 0 2px $shade-blue
+        top 1px
+
+        &:before
+          left 80%
+
+      &:active
+        box-shadow 0 0 $shade-blue
+        top 2px
+
+    .simple
+      &:hover
+        box-shadow inset 0 0 20px 1px lighten($light-blue, 25%), 1px 1px 3px $light-blue
+
+    .big-button
+      background $blue
+      color $white
+      font-family $button-font
+      box-shadow 0 6px $shade-blue
+      transition none
+      border-radius 5px
+      text-transform uppercase
+      padding 25px 80px
+      margin 15px 30px
+
+      &:hover
+        color $white
+        box-shadow 0 4px $shade-blue
+        padding 25px 80px
+        top 2px
+
+        &:before
+          left 80%
+
+      &:active
+        color $white
+        box-shadow 0 0 $shade-blue
+        padding 25px 80px
+        top 6px
+
+      &:before
+        left 130%
+        top 0
+
+    .round-button
+      border-radius 30px
+      border 3px solid darken($background-color, 10%)
+      color darken($background-color, 10%)
+      font-family $button-font
+      padding 10px 30px
+      overflow hidden
+      margin 15px 30px
+      text-transform uppercase
+
+      &:hover
+        border 3px solid $link-article-color
+        color $body-link-hover-color
+
+    .punch-button
+      background $blue
+      border-top 1px solid $shade-blue
+      border-right 1px solid $dark-blue
+      border-bottom 1px solid $darker-blue
+      border-left 1px solid $dark-blue
+      border-radius 4px
+      box-shadow inset 0 1px 10px 1px $light-blue, 0 1px 0 $darker-blue, 0 6px 0 $dark-blue, 0 8px 4px 1px $gray
+      color $white
+      font-family $button-font
+      font-size 1.8rem
+      font-weight 700
+      line-height 1.4
+      margin-bottom 10px
+      margin-top 4px
+      padding .4em
+      width 12em
+      text-align center
+      text-shadow 0 -1px 1px $shade-blue
+      text-transform uppercase
+      -webkit-background-clip padding-box
+
+      hr
+        display block
+        border-color $white
+        margin-top .4em
+        margin-bottom 0
+        padding-top .4em
+
+        &:before
+        &:after
+          display none
+
+      span
+        display block
+        color $dark-blue
+        font-family $button-font
+        font-size 1.4rem
+        font-style italic
+        letter-spacing 1px
+        text-align center
+        text-shadow 0 -1px 1px $light-blue
+        width 80%
+        margin 0 auto
+        text-transform none
+
+      &:hover
+        box-shadow inset 0 0 20px 1px lighten($light-blue, 25%), 0 1px 0 $darker-blue, 0 6px 0 $dark-blue, 0 8px 4px 1px $gray
+        cursor pointer
+
+      &:active
+        box-shadow inset 0 1px 10px 1px $light-blue, 0 1px 0 $darker-blue, 0 2px 0 $dark-blue, 0 4px 3px 0 $gray
+        margin-top 8px
+  section#comments
+    border-top 1px solid hsla(0, 0, 0, .15)
+    padding-top 20px
+  // Footer
+  footer
+    padding 0
+    text-align center
+    position relative
+    padding 4rem 0
+    border darken($background-color, 15%) 1px solid
+    font-size 1.3rem
+    line-height 2.1em
+    color lighten($body-color, 50%)
+    background darken($background-color, 5%)
+    :not(main) > a
+      color lighten($body-color, 20%)
+      font-weight 700
+      text-decoration none
+    .pubkey
+      font-family $code-font
+      font-weight 500
+      color $footer-pubkey-color
+
+// ===========================================================================
+// 4. Typography Basics
+// ===========================================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family $heading-font
+  font-weight $heading-weight
+  line-height 1
+  margin-top 0
+  text-rendering optimizeLegibility
+
+h1
+  font-size 5rem
+  letter-spacing -2px
+  line-height 1.2em
+  text-indent -3px
+
+h2
+  font-size 3.9rem
+  letter-spacing -1px
+  line-height 1.2em
+  text-indent -2px
+
+h3
+  font-size 3.3rem
+
+h4
+  font-size 2.8rem
+  margin-bottom 0
+
+h5
+  font-size 2.4rem
+
+h6
+  font-size 2rem
+
+a
+  transition color ease .3s
+  text-decoration none
+  &:hover
+    color $link-article-color
+
+hr
+  display block
+  height 1px
+  border 0
+  border-top darken($background-color, 15%) 1px solid
+  margin 40px 0
+  padding 0
+
+  &:after
+    display block
+    content ''
+    width 7px
+    height 7px
+    border darken($background-color, 12%) 1px solid // circle border
+    position relative
+    top -5px
+    left 50%
+    margin-left -5px
+    background darken($background-color, 15%)  // inside the circle
+    border-radius 100%
+    box-shadow $background-color 0 0 0 5px // around the circle
+
+// ===========================================================================
+// 5. Special Sections
+// ===========================================================================
 
 p
 ul
 ol
 dl
-  margin: 1.6em 0
+  margin 20px 0
 
 ol ol
 ul ul
 ul ol
 ol ul
-  margin: 0.4em 0
+  margin 5px 0
 
 dl dt
-  float: left
-  width: 180px
-  overflow: hidden
-  clear: left
-  text-align: right
-  text-overflow: ellipsis
-  white-space: nowrap
-  font-weight: bold
-  margin-bottom: 1em
+  clear left
+  float left
+  font-weight bold
+  margin-bottom 12px
+  overflow hidden
+  text-align right
+  text-overflow ellipsis
+  white-space nowrap
+  width 180px
 
 dl dd
-  margin-left: 200px
-  margin-bottom: 1em
-
-// forms
-form
-
-  .form-column
-    display: inline-block
-    text-align: left
-    width: 100%
-
-    input
-    textarea
-      padding: .5em .6em
-      margin: 0
-      // margin: .5em .5em .5em 0
-      border: 1px solid light-gray
-      box-shadow: inset 0 1px 3px shade-gray
-      border-radius: 2px
-      box-sizing: border-box
-      overflow: hidden
-
-    input[type="name"]
-    input[type="email"]
-      width: 35%
-      margin: .5em .5em .5em 0
-
-    textarea
-      margin: .5em .5em .5em 0
-
-    input[type="checkbox"]
-      margin: .5em
-
-    label
-      margin-right: .5em
-
-    textarea
-      width: 100%
-
-    button
-      background: blue
-      border: 1px solid shade-blue
-      box-shadow: inset 0 0 0 1px blue, 0 1px 3px gray
-      border-radius: 2px
-      box-sizing: border-box
-      color: white
-      font-family: 'Open Sans', sans-serif
-      letter-spacing: 1px
-      margin: .5em .5em .5em 0
-      // margin: .5em
-      padding: .1em .6em
-      white-space: nowrap
-      text-transform: uppercase
-      text-shadow: 0 -1px 1px shade-blue
-
-hr
-  display: block
-  height: 1px
-  border: 0
-  border-top: darken(body-background, 15%) 1px solid
-  margin: 3.2em 0
-  padding: 0
-
-  &:after
-    display: block
-    content: ''
-    width: 7px
-    height: 7px
-    border: darken(body-background, 12%) 1px solid // circle border
-    position: relative
-    top: -5px
-    left: 50%
-    margin-left: -5px
-    background: darken(body-background, 15%)  // inside the circle
-    border-radius: 100%
-    box-shadow: body-background 0 0 0 5px // around the circle
-
-hr.nieuws + ul li
-  font-size: 0.9em
-
-blockquote
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  margin: 1.6em 0 1.6em 0em
-  padding: 0 0 0 1.6em
-  border-left: body-link-hover 0.4em solid
-
-  p
-    margin: 0.8em 0
-    font-style: italic
-
-  small
-    display: inline-block
-    margin: 0.8em 0 0.8em 1.5em
-    font-size: 0.9em
-    color: shade-gray
-
-    &:before
-      content: '\2014 \00A0'
-
-  ol
-  ul
-    font-style: italic
-
-  cite
-    font-weight: bold
-
-    &:before
-      content: '—'
-      padding: 0px 0.3em
-
-    a
-      font-weight: normal
-
-mark
-  background-color: yellow
+  margin-left 200px
+  margin-bottom 12px
 
 code
 tt
-  padding: 1px 3px
-  font-family: Source Code Pro, monospace, sans-serif
-  font-size: 0.85em
-  white-space: pre-wrap
-  // border: 1px solid #fafafa
-  background: body-link-hover
-  border-radius: .2em
-  color: white
+  background $body-link-hover-color
+  border-radius .2em
+  color $white
+  font-family $code-font
+  font-size .85em
+  font-weight $code-weight
+  padding 1px 3px
+  white-space pre-wrap
 
 pre
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  color: white
-  margin: 1.6em 0
-  // border: 1px solid #fafafa
-  width: 100%
-  padding: 10px
-  font-family: Source Code Pro, monospace, sans-serif
-  font-size: 0.9em
-  white-space: pre
-  overflow: auto
-  background: #222
-  border-radius: .3em
+  -moz-box-sizing border-box
+  box-sizing border-box
+  background #222
+  border-radius .3em
+  color $white
+  font-family $code-font
+  font-size .9em
+  font-weight $code-weight
+  margin 1.6em 0
+  overflow auto
+  padding 10px
+  white-space pre
+  width 100%
 
 pre code
 tt
-  font-size: inherit
-  white-space: -moz-pre-wrap
-  white-space: pre-wrap
-  background: transparent
-  border: none
-  padding: 0
+  background transparent
+  border none
+  font-size inherit
+  padding 0
+  white-space -moz-pre-wrap
+  white-space pre-wrap
 
 kbd
-  display: inline-block
-  margin-bottom: 0.4em
-  padding: 1px 8px
-  border: #ccc 1px solid
-  color: #666
-  text-shadow: white 0 1px 0
-  font-size: 0.9em
-  font-weight: bold
-  background: #f4f4f4
-  border-radius: 4px
-  box-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.2),
-    0 1px 0 0 white inset
-
-table
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  margin: 1.6em 0
-  width:100%
-  max-width: 100%
-  background-color: transparent
-
-  th
-    color: hsla(0, 0, 0, 1)
-
-  th
-  td
-    padding: 8px
-    line-height: 20px
-    text-align: left
-    vertical-align: top
-    // border-top: 1px solid #839496
-
-table caption + thead tr:first-child th
-table caption + thead tr:first-child td
-table colgroup + thead tr:first-child th
-table colgroup + thead tr:first-child td
-table thead:first-child tr:first-child th
-table thead:first-child tr:first-child td
-  border-top: 0
-
-table tbody + tbody border-top: 2px solid #efefef
-
-table table table background-color: white
-
-table tbody > tr:nth-child(odd) > td
-table tbody > tr:nth-child(odd) > th
-  background-color: #f6f6f6
-
-table.plain tbody > tr:nth-child(odd) > td
-table.plain tbody > tr:nth-child(odd) > th
-   background: transparent
+  background #f4f4f4
+  border #ccc 1px solid
+  border-radius 3px
+  box-shadow 0 1px 0 rgba(0, 0, 0, .2),   0 0 0 2px white inset
+  color #666
+  display inline-block
+  font-family $body-font
+  font-size .9em
+  margin-bottom .4em
+  padding 0 5px
+  text-shadow 0 1px 0 $white
+  white-space nowrap
 
 iframe
 .fluid-width-video-wrapper
-  display: block
-  margin: 1.6em 0
+  display block
+  margin 1.6em 0
 
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
 .fluid-width-video-wrapper iframe
-  margin: 0
-
-/* General button style (reset) */
-.btn
-  border: none
-  font-size: inherit
-  color: white
-  background: none
-  cursor: pointer
-  display: inline-block
-  letter-spacing: 1px
-  font-weight: 700
-  outline: none
-  position: relative
-  // -webkit-transition: all 0.3s
-  // -moz-transition: all 0.3s
-  transition: all 0.3s
-  vertical-align: middle
-
-  &:after
-    content: ''
-    position: absolute
-    z-index: -1
-    // -webkit-transition: all 0.3s
-    // -moz-transition: all 0.3s
-    transition: all 0.3s
-
-.small-button
-  background: blue
-  border-radius: 2px
-  box-shadow: 0 2px shade-blue
-  color: white
-  font-family: 'Open Sans', sans-serif
-  font-size: 1.4rem
-  font-weight: 700
-  line-height: 1.6
-  margin: 0
-  border: 1px solid shade-blue
-  padding: 0 5px
-  white-space: nowrap
-
-  &:before
-    left: 130%
-    top: 0
-    // color: dark-blue
-
-  &:hover
-    box-shadow: 0 2px shade-blue
-    top: 1px
-
-    &:before
-      left: 80%
-
-  &:active
-    box-shadow: 0 0 shade-blue
-    top: 2px
-
-.simple
-
-  &:hover
-    box-shadow: inset 0 0 20px 1px lighten(light-blue, 25%), 1px 1px 3px light-blue
-
-.big-button
-  background: blue
-  color: white
-  font-family: 'Open Sans', sans-serif
-  box-shadow: 0 6px shade-blue
-  transition: none
-  border-radius: 5px
-  text-transform: uppercase
-  padding: 25px 80px
-  margin: 15px 30px
-
-  &:hover
-    color: white
-    box-shadow: 0 4px shade-blue
-    padding: 25px 80px
-    top: 2px
-
-    &:before
-      left: 80%
-
-  &:active
-    color: white
-    box-shadow: 0 0 shade-blue
-    padding: 25px 80px
-    top: 6px
-
-  &:before
-    left: 130%
-    top: 0
-
-.round-button
-  border-radius: 30px
-  border: 3px solid darken(body-background, 10%)
-  color: darken(body-background, 10%)
-  font-family: 'Open Sans', sans-serif
-  padding: 10px 30px
-  overflow: hidden
-  margin: 15px 30px
-  text-transform: uppercase
-
-  &:hover
-    border: 3px solid body-link
-    color: body-link-hover
-
-.punch-button
-  background: blue
-  border-top: 1px solid shade-blue
-  border-right: 1px solid dark-blue
-  border-bottom: 1px solid darker-blue
-  border-left: 1px solid dark-blue
-  border-radius: 4px
-  box-shadow: inset 0 1px 10px 1px light-blue, 0 1px 0 darker-blue, 0 6px 0 dark-blue, 0 8px 4px 1px gray
-  color: white
-  font-family: 'Open Sans', sans-serif
-  font-size: 1.8rem
-  font-weight: 700
-  line-height: 1.4
-  margin-bottom: 10px
-  margin-top: 4px
-  padding: .4em
-  width: 12em
-  // word-wrap: normal
-  // white-space: nowrap
-  text-align: center
-  text-shadow: 0 -1px 1px shade-blue
-  text-transform: uppercase
-  -webkit-background-clip: padding-box
-
-  hr
-    display: block
-    border-color: white
-    margin-top: .4em
-    margin-bottom: 0
-    padding-top: .4em
-
-    &:before
-    &:after
-      display: none
-
-  span
-    display: block
-    color: dark-blue
-    font-family: 'Open Sans', sans-serif
-    font-size: 1.4rem
-    font-style: italic
-    letter-spacing: 1px
-    text-align: center
-    text-shadow: 0 -1px 1px light-blue
-    width: 80%
-    margin: 0 auto
-    text-transform: none
-
-  &:hover
-    box-shadow: inset 0 0 20px 1px lighten(light-blue, 25%), 0 1px 0 darker-blue, 0 6px 0 dark-blue, 0 8px 4px 1px gray
-    cursor: pointer;
-
-  &:active
-    box-shadow: inset 0 1px 10px 1px light-blue, 0 1px 0 darker-blue, 0 2px 0 dark-blue, 0 4px 3px 0 gray
-    margin-top: 8px;
-
-.right-line
-  position: relative
-  z-index: 1
-  overflow: hidden
-  text-align: left
-
-  &:after
-    margin-left: 10px
-    position: absolute
-    top: 50%
-    overflow: hidden
-    width: 100%
-    height: 3px
-    content: '\a0'
-    background-color: red
-
-// ==========================================================================
-// 3. Utilities - These things get used a lot
-// ==========================================================================
-
-/* Hides shit */
-.hidden
-  text-indent: -9999px
-  visibility: hidden
-  display: none
-
-/* Creates a responsive wrapper that makes our content scale nicely */
-.inner
-  position: relative
-  width: 80%
-  max-width: 560px
-  margin: 0 auto
-
-/* Centres vertically yo. (IE8+) */
-.vertical
-  display: table-cell
-  vertical-align: middle
-
-/* Centres horizontally bro. */
-.center
-  text-align: center
-
-/* Float to the left */
-.left
-  float: left
-
-/* Or float to the right */
-.right
-  float: right
-
-/* Vertical timeline */
-.timeline
-  list-style: none
-  margin: 0
-  padding: 2rem 0 0 0
-
-  br
-    display: none
-
-.timeline > li
-  overflow: hidden
-  margin: 0
-  position: relative
-
-.timeline-date
-  width: 60px
-  float: left
-  margin: 0
-  font-weight: bold
-  color: blue
-
-.timeline-content
-  border-left: 4px darken(body-background, 5%) solid
-  margin-left: 60px
-  padding: 0 0 20px 25px
-
-  h2
-    font-size: 2.2rem
-    margin: 0 0 20px 0
-
-  p
-    margin: 0 0 20px 0
-
-  &:before
-    content: ''
-    width: 12px
-    height: 12px
-    background: blue
-    position: absolute
-    left: 56px
-    top: 8px
-    border-radius: 100%
-
-// ==========================================================================
-// 4. General - The main styles for the the theme
-// ==========================================================================
-
-/* Big cover image on the home page */
-.site-head
-  position: relative
-  display: table
-  width: 100%
-  // height: auto
-  margin-bottom: 5rem
-  text-align: center
-  background: dark-gray url('/images/header.png') no-repeat center center
-  background-size: cover
-  padding: 2% 0
-
-.blog-logo
-  text-decoration: none
-
-/* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
-.blog-logo img
-  display: block
-  max-height: 100px
-  width: auto
-  margin: 0 auto
-  line-height: 0
-
-/* The details of your blog. Defined in ghost/settings/ */
-.blog-title
-  color: header-title
-  margin: 10px 0
-  padding-bottom: 10px
-  font-size: 5rem
-  letter-spacing: -1px
-  font-family: 'Open Sans', sans-serif
-  font-weight: 500
-  text-shadow: 0 1px 6px rgba(black, .5)
-
-  a
-    color: inherit
-    text-decoration: none
-
-.blog-subtitle
-  display: none
-  color: header-subtitle
-  margin: 10px 0 10px 0
-  font-size: 3rem
-  letter-spacing: -1px
-  font-family: 'Open Sans'
-  font-weight: 300
-  text-shadow: 0 1px 6px rgba(black, .5)
-
-.blog-description
-  color: header-description
-  margin: 0
-  font-size: 1.8rem
-  line-height: 1.5em
-  font-weight: 300
-  font-family: 'Open Sans'
-  letter-spacing: 0
-  text-shadow: 0 1px 3px rgba(black .35)
-
-  a
-    color: body-link
-    text-decoration: none
-
-/* Every post, on every page, gets this style on its <article> tag */
-.post
-  position: relative
-  width: 80%
-  max-width: 720px
-  margin: 4rem auto
-  padding-bottom: 4rem
-  word-break: break-word
-  hyphens: auto
-  text-align: justify
-
-  .post-content
-    p:first-child
-      :not(blockquote p)
-        display: none
-
-  /* Make sure the references are smaller */
-  #references + ul
-    padding-left: 0
-
-    li
-      font-size: 1.4rem
-      line-height: 1.6em
-      list-style: none
-      margin-bottom: 2rem
-      text-align: left
-
-
-.home-template
-  .post
-    border-bottom: darken(body-background, 15%) 1px solid
-
-    /* Add a little circle in the middle of the border-bottom on our .post */
-    &:after
-      background: darken(body-background, 15%)  // inside the circle
-      border: darken(body-background, 12%) 1px solid // circle border
-      border-radius: 100%
-      box-shadow: body-background 0 0 0 5px // around the circle
-      bottom: -5px
-      display: block
-      content: ''
-      height: 7px
-      left: 50%
-      margin-left: -5px
-      position: absolute
-      width: 7px
-  .post-title
-    text-align: center
-
-.post-header
-  text-align: center
-
-.post-title
-  color: body-font
-  margin: 0
-  text-align: left
-
-  a
-    text-decoration: none
-
-.post-excerpt p
-  margin: 1.6rem 0 0 0
-  font-size: 1em
-  line-height: 1.6em
-  text-align: center
-
-.post-meta
-  display: inline-block
-  margin: 1em 0 5px 0
-  font-family: 'Open Sans', sans-serif
-  font-size: 1.5rem
-  color: body-accent
-
-.user-meta
-  position: relative
-  padding: 0.3rem 40px 0 100px
-  min-height: 77px
-
-.user-image
-  position: absolute
-  top: 0
-  left: 0
-
-.user-name
-  display: block
-  font-weight: bold
-
-.user-bio
-  display: block
-  max-width: 440px
-  font-size: 1.4rem
-  line-height: 1.5em
-
-.publish-meta
-  position: absolute
-  top: 0
-  right: 0
-  padding: 4.3rem 0 4rem 0
-  text-align: right
-
-.publish-heading
-  display: block
-  font-weight: bold
-
-.publish-date
-  display: block
-  font-size: 1.4rem
-  line-height: 1.5em
-
-// ==========================================================================
-// 5. Single Post - When you click on an individual post
-// ==========================================================================
-
-/* Keep large images within the bounds of the post-width */
-.post-content
-  img
-    display: block
-    max-width: 100%
-    margin: 0 auto
-    height: auto
-    box-shadow: 1px 1px 7px darken(body-background, 15%)
-    border-radius: 4px
-
-  .noshadow
-    box-shadow: none
-    border-radius: 0
-
-  .logos
-    display: inline-block
-    clear: both
-
-/* The author credit area after the post */
-.post-footer
-  position: relative
-  margin: 4rem 0 0 0
-  padding: 4rem 0 4rem 0
-  border-top: darken(body-background, 15%) 1px solid
-
-  &:before
-    display: block
-    content: ''
-    width: 7px
-    height: 7px
-    border: darken(body-background, 12%) 1px solid // circle border
-    position: relative
-    top: -45px
-    left: 50%
-    margin-left: -5px
-    background: darken(body-background, 15%)  // inside the circle
-    border-radius: 100%
-    box-shadow: body-background 0 0 0 5px // around the circle
-
-  h4
-    font-size: 1.8rem
-    margin: 0
-
-  p
-    margin: 1rem 0
-    // font-size: 1.4rem
-    line-height: 1.6em
-
-  .author
-    margin-left: 90px
-
-  .author-img
-    max-height: 80px
-    position: absolute
-
-/* Add a little circle in the middle of the border-top on our #comment */
-#comment
-  border-top: darken(body-background, 15%) 1px solid
-  padding-top: 20px
-
-  &:before
-    display: block
-    content: ''
-    width: 7px
-    height: 7px
-    border: darken(body-background, 12%) 1px solid // circle border
-    position: relative
-    top: -25px
-    left: 50%
-    margin-left: -5px
-    background: darken(body-background, 15%)  // inside the circle
-    border-radius: 100%
-    box-shadow: body-background 0 0 0 5px // around the circle
-
-// ==========================================================================
-// 6. Third Party Elements - Embeds from other services
-// ==========================================================================
+  margin 0
 
 /* Hexo: Youtube, other video container */
 .video-container
-  position: relative
-  padding-top: 56.25%
-  height: 0
-  overflow: hidden
+  position relative
+  padding-top 56.25%
+  height 0
+  overflow hidden
 
   iframe
   object
   embed
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    margin-top: 0
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    margin-top 0
 
 /* Hexo: Syntax Highlighter */
 figure.highlight
-  background: white
-  border-radius: 0.3em
-  border: 1px solid darken(white, 3%)
-  line-height: 1.45em
-  font-size: .9em
-  margin-bottom: 2.1em
-  color: darken(white, 3%)
-  overflow: auto
-  white-space: pre
-  word-wrap: normal
+  background rgb(34, 34, 34)
+  border-radius .3em
+  border 1px solid darken($white, 3%)
+  color darken($white, 3%)
+  font-size .9em
+  line-height 1.45em
+  margin 1em 0 2.1em 0
+  overflow auto
+  white-space pre
+  word-wrap normal
 
   &.md
     td.gutter
-      display: none
+      display none
 
   figcaption
-    padding: 7px 10px
-    font-family: 'Open Sans', sans-serif
-    font-size: .8em
-    color: #839496
-    background: #191919
-    text-align: center
+    padding 7px 10px
+    font-family 'Open Sans', sans-serif
+    font-size .8em
+    color #839496
+    background #191919
+    text-align center
 
     a
-      margin-left: 0.3em
+      margin-left .3em
 
   table
-    margin: 0
+    margin 0
 
   table > tbody > tr > td
-    padding: 0
-    background: white !important
+    padding 0
+    background $white
 
   table > tbody > tr > td.gutter
-    max-width: 40px
-    text-align: right
-    color: #839496
+    max-width 40px
+    text-align right
+    pre span.line
+      color #839496
 
   pre
-    border: none
-    border-radius: 0
-    margin: 0
+    border none
+    border-radius 0
+    margin 0
+
+// ===========================================================================
+// 6. Media Queries
+// ===========================================================================
+
+@media (min-width 720px)
+
+  body
+    display flex
+    flex-direction row
+
+    header
+      flex 1
+      overflow hidden
+      text-align right
+      padding 40px
+
+      nav
+        ul
+          padding-top 24px
+          li
+            display block
+            line-height 1.6em
+            padding 0
+            &:after
+              content ''
+              padding 0
+
+    main
+      flex 2
+      padding 40px
+      form
+        .form-column
+          input[type="name"]
+          input[type="email"]
+            width 35%
+            margin .5em .5em .5em 0
+
+// ===========================================================================
+// 7. Code Theme
+// ===========================================================================
 
 // Theme: Solarized - Github
 // More themes here: http://softwaremaniacs.org/media/soft/highlight/test.html
@@ -1034,10 +841,10 @@ pre .comment
 pre .template_comment
 .diff pre .header
 pre .javadoc
-  color: #75715e
+  color #75715e
 
 pre .function .keyword
-  color: #66d9ef
+  color #66d9ef
 
 pre .keyword
 .css .rule pre .keyword
@@ -1047,69 +854,69 @@ pre .winutils
 pre .subst
 pre .request
 pre .status
-  color: #F92672
+  color #F92672
 
 pre .number
 pre .hexcolor
 .ruby pre .constant
-  color: #ae81ff
+  color #ae81ff
 
 pre .value
-  color: #e6db74
+  color #e6db74
 
 pre .string
 pre .tag pre .value
 pre .phpdoc
 .tex pre .formula
-  color: #e6db74
+  color #e6db74
 
 pre .title
 pre .id
 .coffeescript pre .params
 .scss pre .preprocessor
-  color: #f92672
+  color #f92672
 
 .javascript pre .title
 .lisp pre .title
 .clojure pre .title
 pre .subst
-  font-weight: normal
+  font-weight normal
 
 pre .class pre .title
 .haskell pre .type
 .vhdl pre .literal
 .tex pre .command
-  color: #e6db74
+  color #e6db74
 
 pre .literal
-  color: #ae81ff
+  color #ae81ff
 
 pre .tag
 pre .tag pre .title
 pre .rules pre .property
 .django pre .tag pre .keyword
-  color: #a6e22e
-  font-weight: normal
+  color #a6e22e
+  font-weight normal
 
 pre .attribute
 pre .variable
 .lisp pre .body
-  color: #a6e22e
+  color #a6e22e
 
 pre .regexp
-  color: #ae81ff
+  color #ae81ff
 
 pre .symbol
 .ruby pre .symbol pre .string
 .lisp pre .keyword
 .tex pre .special
 pre .prompt
-  color: #f92672
+  color #f92672
 
 pre .built_in
 .lisp pre .title
 .clojure pre .built_in
-  color: #e6db74
+  color #e6db74
 
 pre .preprocessor
 pre .pragma
@@ -1117,472 +924,26 @@ pre .pi
 pre .doctype
 pre .shebang
 pre .cdata
-  color: #f8f8f2
+  color #f8f8f2
 
 pre .deletion
-  background: #75715e
+  background #75715e
 
 pre .addition
-  background: #e6db74
+  background #e6db74
 
 .diff pre .change
-  background: #f92672
+  background #f92672
 
 pre .chunk
-  color: #a6e22e
+  color #a6e22e
 
 /* Github */
 
 .gist table
-  margin: 0
-  font-size: 1.4rem
+  margin 0
+  font-size 1.4rem
 
 .gist .line-number
-  min-width: 25px
-  font-size: 1.1rem
-
-// ==========================================================================
-// 7. Pagination - Tools to let you flick between pages
-// ==========================================================================
-
-/* The main wrapper for our pagination links */
-.pagination
-  position: relative
-  width: 80%
-  max-width: 720px
-  margin: 4rem auto
-  font-family: 'Open Sans', sans-serif
-  font-size: 1.3rem
-  color: body-accent
-  text-align: center
-
-  a
-    color: body-accent
-
-/* Push the previous/next links out to the left/right */
-.older-posts
-.newer-posts
-  position: absolute
-  display: inline-block
-  padding: 0 15px
-  border: lighten(gray, 60%) 2px solid
-  text-decoration: none
-  border-radius: 30px
-  transition: border ease 0.3s
-
-.older-posts
-  right: 0
-
-.page-number
-  display: inline-block
-  padding: 2px 0
-
-.newer-posts
-  left: 0
-
-.older-posts:hover
-.newer-posts:hover
-  border-color: body-accent
-
-// ==========================================================================
-// 8. Footer - The bottom of every page
-// ==========================================================================
-
-.site-footer
-  position: relative
-  margin: 8rem 0 0 0
-  padding: 4rem 0
-  border-top: darken(body-background, 15%) 1px solid
-  font-family: 'Open Sans', sans-serif
-  font-size: 1.3rem
-  line-height: 1.7em
-  color: lighten(body-font, 50%)
-  text-align: center
-  background: darken(body-background, 5%)
-
-  a
-    color: lighten(body-font, 20%)
-    font-weight: 700
-    text-decoration: none
-
-  .blog-pubkey
-    color: lighten(body-font, 20%)
-    font-family: Source Code Pro, monospace, sans-serif
-    font-weight: 500
-    margin: 0 0 0.75em 0
-
-.poweredby .icon-hexo
-  font-weight: 700
-  text-decoration: none
-
-  &:hover
-    text-decoration: none
-
-  &:before
-    font-size: 1rem
-    margin-right: 0.2em
-
-/* The subscribe icon on the footer */
-.subscribe
-  width: 28px
-  height: 28px
-  position: absolute
-  top: -14px
-  left: 50%
-  margin-left: -15px
-  border: darken(body-background, 15%) 1px solid
-  text-align: center
-  line-height: 2.4rem
-  border-radius: 50px
-  background: body-background
-  transition: box-shadow 0.5s
-
-  /* The RSS icon, inserted via icon font */
-  &:before
-    color: orange
-    font-size: 10px
-    position: absolute
-    top: 9px
-    left: 9px
-    font-weight: bold
-    transition: color 0.5s ease
-
-  /* Add a box shadow to on hover */
-  &:hover
-    background: lighten(body-background, 25%)
-    box-shadow: rgba(darken(body-background, 10%), 0.5) 0 0 0 3px
-    transition: box-shadow 0.25s
-
-    &:before
-      color: body-font
-
-    /* On hover, show the tooltip! */
-    .tooltip
-      opacity: 1
-      top: -33px
-
-/* CSS tooltip saying 'Subscribe!' - initially hidden */
-.tooltip
-  background: body-font
-  color: body-background
-  opacity:0
-
-  border-radius: 3px
-  box-shadow: 0 1px 4px rgba(black, 0.1)
-  display: inline-block
-  left: -21px
-  padding: 4px 8px 5px 8px
-  position: absolute
-  top: -23px
-  transition: opacity 0.3s ease, top 0.3s ease
-
-  font-size: 1.1rem
-  line-height: 1em
-  text-align: center
-
-  /* The little chiclet arrow under the tooltip, pointing down */
-  &:after
-    content: ''
-    border-width: 5px 5px 0 5px
-    border-style: solid
-    border-color: body-font transparent
-    display: block
-    position: absolute
-    bottom: -4px
-    left: 50%
-    margin-left: -5px
-    width: 0
-    z-index: 220
-
-// ==========================================================================
-// 9. Media Queries - 640px - 960px or 40em - 60em (Tablet)
-// ==========================================================================
-
-@media tablet
-
-  blockquote
-    margin-left: 0
-
-  .site-head
-    box-sizing: border-box
-    // height: auto
-    // min-height: 240px
-    padding: 3% 0
-
-  .blog-title
-    font-size: 4rem
-    letter-spacing: -1px
-
-  .blog-subtitle
-    font-size: 2.6rem
-    letter-spacing: -1px
-
-  .blog-description
-    font-size: 1.7rem
-    line-height: 1.5em
-
-  .post
-    font-size: 0.9em
-    line-height: 1.6em
-
-  .post-title
-    text-align: left
-
-  .post-template
-    .post
-      // padding-bottom: 1rem
-    .post-header
-      // padding: 40px 0
-
-  .timeline-content
-
-    h2
-      text-align: left
-
-  h1
-    font-size: 4.8rem
-    text-indent: -2px
-
-  h2
-    font-size: 3.8rem
-
-  h3
-    font-size: 3.3rem
-
-  h4
-    font-size: 2.8rem
-
-// ==========================================================================
-// 10. Media Queries - 0 - 640px or 0 - 40em (Phone)
-// ==========================================================================
-
-@media phone
-
-  .blog-logo img
-    max-height: 80px
-
-  .inner
-  .pagination
-    margin-left: 16px
-    margin-right: 16px
-    width: auto
-
-  .post
-    font-size: 0.8em
-    line-height: 1.6em
-    margin-left: 16px
-    margin-right: 16px
-    width: auto
-
-  .site-head
-    padding: 3% 0
-
-  .blog-title
-    font-size: 3rem
-
-  .blog-subtitle
-    font-size: 2.3rem
-
-  .blog-description
-    font-size: 1.5rem
-    margin-left: 32px
-    margin-right: 32px
-
-  h1
-  h2
-    font-size: 3rem
-    letter-spacing: -1px
-    line-height: 1.1em
-
-  h2
-    text-align: left
-
-  h3
-    font-size: 2.8rem
-
-  h4
-    font-size: 2.3rem
-
-  form
-    .form-column
-      input[type="name"]
-      input[type="email"]
-        width: 100%
-
-  .post-template
-    .post
-      // padding-bottom: 0
-    .post-header
-      // padding: 30px 0
-
-  .post-meta
-    font-size: 1.3rem
-
-  .timeline-content
-
-    h2
-      text-align: left
-
-  .older-posts,
-  .newer-posts
-    margin: 10px 0
-    position: static
-
-  .page-number
-    display: block
-
-  .site-footer
-    font-size: 1.1rem
-    margin-top: 6rem
-
-// ==========================================================================
-// 11. Media Queries - Print
-// ==========================================================================
-
-@media print
-
-  @page
-    margin: 1.5cm 1cm
-
-  .blog-logo
-  .site-footer
-  #comment
-    display: none
-
-  .site-head
-    background: none
-    border-bottom: 2px solid shade-gray
-    display: table
-    // height: auto
-    margin-bottom: 0rem
-    padding: 0 0 4% 0
-    position: relative
-    text-align: left
-    width: 100%
-
-  .blog-title
-    // color: header-title
-    font-family: 'Open Sans', sans-serif
-    font-size: 5rem
-    font-weight: 500
-    margin: 10px 0 10px 0
-    letter-spacing: -1px
-    padding-bottom: 0
-    text-shadow: none
-    // font-weight: bold
-    // font-family: 'Roboto Slab'
-    // font-family: 'Source Code Pro'
-
-    a
-      color: dark-gray
-      text-decoration: none
-
-  .blog-description
-    color: shade-gray
-    font-family: 'Open Sans'
-    font-size: 1.8rem
-    font-weight: 300
-    letter-spacing: 0
-    line-height: 1.5em
-    margin: 0
-    text-shadow: none
-
-    a
-      color: black
-      text-decoration: underline
-
-  body
-    background: body-background
-    color: body-font
-    font-family: 'Droid Serif', Georgia, serif
-    font-size: 1.4rem
-    height: 100%
-    line-height: 1.3em
-    max-height: 100%
-    outline: none
-    overflow-x: hidden
-
-  a
-    color: black
-    text-decoration: underline
-
-  hr
-    height: 1px
-    border-top: darken(body-background, 15%) 1px solid
-    margin: 3.2em 0
-    padding: 0
-
-    &:after
-      display: none
-
-  h1
-    font-size: 3.5rem
-    letter-spacing: -2px
-    line-height: 1.2em
-    text-indent: -3px
-
-  h2
-    font-size: 3rem
-    letter-spacing: -1px
-    line-height: 1.2em
-    text-indent: -2px
-
-  h3
-    font-size: 2.8rem
-
-  h4
-    font-size: 2.5rem
-
-  h5
-    font-size: 2.2rem
-
-  h6
-    font-size: 1.9rem
-
-  blockquote
-    border-left: shade-gray 0.4em solid
-    -moz-box-sizing: border-box
-    box-sizing: border-box
-    margin: 1.6em 0 1.6em 0em
-    padding: 0 0 0 1.6em
-
-  .inner
-    max-width: 98%
-    width: 98%
-
-  .post
-    width: 98%
-
-  .post-content
-    p:first-child
-      /* Hide the post excerpt on posts */
-
-  .post-meta
-    color: gray
-
-    /* Add author on printed version */
-    time:before
-      content: 'Written on'
-
-    time:after
-      content: 'by ' + author
-
-  .timeline-content
-
-    h2
-      text-align: left
-
-  .post-footer
-    display: none
-
-  .home-template
-    .post
-      border-bottom: darken(body-background, 15%) 1px solid
-
-      &:after
-        display: none
-
-// ==========================================================================
-// End of file. Media queries should be the last thing here. Do not add stuff
-// below this point, or it will probably fuck everything up.
-// ==========================================================================
+  min-width 25px
+  font-size 1.1rem
