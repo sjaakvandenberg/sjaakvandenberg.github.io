@@ -4,7 +4,7 @@ date: 2015-08-01 11:15:11
 ---
 There ain't no such thing as a free lunch, or a free operating system. Somewhere, someone is paying for it. The way you're paying for that Free(tm) upgrade to Windows 10, is with your time.
 
-![South Park - Season 6, Episode 2: Asspen](timeshare.png)
+{% asset_img timeshare.png South Park - Season 6, Episode 2: Asspen %}
 
 Windows 10 is the result of a lot of time spent by engineers, designers, managers, technical support, accountants, maintenance people, investors, board members and a whole host of other people. As a reward for this investment of time, they aim to make money. If they can't, you won't be running Windows 10 on your device. And if you're not charged at the point of sale for the operating system, the money is made some other way. Besides being an operating system, Windows is also a platform for ads and apps. The operating system is the service, and your time spent consuming ads or buying apps is the price.
 

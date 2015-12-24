@@ -2,7 +2,7 @@ title: The Rise of the Autobots
 intro: A look at the upward march of automation into the vehicles around us.
 date: 2015-05-28 13:45:00
 ---
-![Autonomous Car](autonomous_car.jpg)
+{% asset_img autonomous_car.jpg Autonomous Car %}
 
 Human drivers are so twentieth century. They're prone to errors, have terrible fuel economy and they tend to get distracted, or sometimes even fall asleep. But in an increasingly connected world, robots will help aid us in our needs for transportation.
 

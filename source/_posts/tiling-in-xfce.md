@@ -2,7 +2,7 @@ title: Tiling in XFCE
 date: 2015-07-19 09:44:40
 intro: A Python script to improve XFCE with custom tiling.
 ---
-<img class="noshadow" src="xfce-mouse.svg" alt="XFCE logo">
+<img class="noshadow" src="{% asset_path xfce-mouse.svg %}" alt="XFCE logo" title="XFCE logo">
 
 > Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
 
@@ -16,7 +16,7 @@ While Gnome does offer tiling extensions, I don't want that high of a resource b
 
 ## Python to the Rescue
 
-![tiling.py](tiling.png)
+{% asset_img tiling.png tiling.py %}
 
 I've written a [Python script](https://github.com/sjaakvandenberg/gtk-tiling) that does exactly that. Here is the grid I've defined in the XFCE Settings Editor under `xfce4-keyboard-shortcuts`.
 
