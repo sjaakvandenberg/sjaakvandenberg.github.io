@@ -13,7 +13,7 @@ if is_home()
 //- articles page
 if is_page() && page.title.toLowerCase() == 'articles'
   article.full
-    h2= page.title
+    h1= page.title
     != page.content
     - var lastyear = 0
     for post, index in site.posts.sort('date', 'desc').toArray()
@@ -35,12 +35,12 @@ if is_page() && page.title.toLowerCase() == 'articles'
   include _comments
 else if is_page()
   article.full
-    h2= page.title
+    h1= page.title
     != page.content
   include _comments
 else if is_post()
   article.full
-    h2= page.title
+    h1= page.title
     span.post-meta
       time= full_date(new Date(page.date), 'dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.date), 'H:mm')
     != page.content
