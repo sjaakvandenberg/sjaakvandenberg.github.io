@@ -259,7 +259,7 @@ main
     font-family $small-font
     font-weight $small-weight
     font-size 1.62rem
-    margin 16px 0 0 0
+    margin 0
   // Article list
   article.item
     border-bottom 1px solid hsla(0, 0, 0, .15)
@@ -268,7 +268,7 @@ main
     text-align center
     h2
       color $body-color
-      margin 0
+      margin-bottom 16px
     p.post-excerpt
       font-size 1.62rem
       line-height 1.6em
@@ -301,10 +301,13 @@ main
       text-decoration underline
       &:hover
         color $body-link-hover-color
+    p + img
+      margin-top 0
     img
       // Images are responsive by default
       border-radius 3px
       height auto
+      margin-top 20px
       width 100%
     // Blockquotes within articles
     blockquote
@@ -341,8 +344,6 @@ main
         a
           color $link-article-color
           font-weight normal
-    .post-meta
-      padding-bottom 16px
     // Images without shadows and round borders
     .no-shadow
       box-shadow none
@@ -384,12 +385,12 @@ main
         textarea
           width 100%
         button
-          background blue
+          background $blue
           border 1px solid $shade-blue
-          box-shadow inset 0 0 0 1px blue, 0 1px 3px gray
+          box-shadow inset 0 0 0 1px $blue, 0 1px 3px $gray
           border-radius 2px
           box-sizing border-box
-          color white
+          color $white
           font-family $button-font
           letter-spacing 1px
           margin .5em .5em .5em 0
@@ -585,6 +586,7 @@ h6
   font-weight $heading-weight
   line-height 1
   margin-top 0
+  margin-bottom 20px
   text-rendering optimizeLegibility
 
 h1
@@ -711,7 +713,7 @@ kbd
   background #f4f4f4
   border #ccc 1px solid
   border-radius 3px
-  box-shadow 0 1px 0 rgba(0, 0, 0, .2),   0 0 0 2px white inset
+  box-shadow 0 1px 0 rgba(0, 0, 0, .2),   0 0 0 2px $white inset
   color #666
   display inline-block
   font-family $body-font
