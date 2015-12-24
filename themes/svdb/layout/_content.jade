@@ -6,7 +6,7 @@ if is_home()
       article.item
         h2= post.title
         span.post-meta
-          time= full_date(new Date(post.date), 'dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(post.date), 'H:mm')
+          | Published at #{time= full_date(new Date(post.date), 'dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(post.date), 'H:mm')}
         p.post-excerpt= post.intro ? post.intro : post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220)
   footer
     include _footer
@@ -36,12 +36,18 @@ if is_page() && page.title.toLowerCase() == 'articles'
 else if is_page()
   article.full
     h1= page.title
+    if page.updated
+      span.post-meta
+        | Last updated at #{time= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')}
     != page.content
   include _comments
 else if is_post()
   article.full
     h1= page.title
     span.post-meta
-      time= full_date(new Date(page.date), 'dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.date), 'H:mm')
+      | Published at #{time= full_date(new Date(page.date), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.date), 'H:mm')}
+      if page.updated
+        br
+        | Last updated at #{time= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')}
     != page.content
   include _comments
