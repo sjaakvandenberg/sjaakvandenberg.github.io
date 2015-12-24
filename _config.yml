@@ -139,9 +139,9 @@ browsersync:
 ## https://github.com/hexojs/hexo-clean-css
 clean_css:
   compatibility: true
+  processImport: true
   exclude:
     - '*.min.css'
-  processImport: true
 
 # HTMLMinifier
 ## https://github.com/hexojs/hexo-html-minifier
