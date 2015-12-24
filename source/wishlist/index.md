@@ -1,5 +1,6 @@
 title: Wishlist
 date: 2014-12-02 19:54:31
+comments: false
 ---
 Things with a &#9733; are especially cool. My hiking boot size is UK 11 EU 46, sole B.
 
@@ -7,19 +8,19 @@ Things with a &#9733; are especially cool. My hiking boot size is UK 11 EU 46, s
 
 ---
 
-# Books
+## Books
 
 Either Kindle, paperback or hardcover
 
 | Item         | Price  | Link
 |--------------|--------|-----
+| Hernando de Soto - The Mystery of Capital | $12 | [Amazon](http://www.amazon.com/Mystery-Capital-Hernando-Soto-ebook/dp/B004FV4XTE/)
 | Mostafa Farghaly - Bitcoin Programming | $26 | [Amazon](http://www.amazon.com/Bitcoin-Programming-Mostafa-Farghaly/dp/1500176826/)
 | Andreas M. Antonopoulos - Mastering Bitcoin &#9733; | $28-35 | [O'Reilly](http://shop.oreilly.com/product/0636920032281.do)
 | David Flanagan - JavaScript: The Definitive Guide | $28-31 | [Amazon](http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides-ebook/dp/B004XQX4K0/)
-| Hernando de Soto - The Mystery of Capital | $12 | [Amazon](http://www.amazon.com/Mystery-Capital-Hernando-Soto-ebook/dp/B004FV4XTE/)
 | Jeffrey Tucker - Bit by Bit | $9 | [Amazon](http://www.amazon.com/Bit-How-P2P-Freeing-World-ebook/dp/B0S085TRS/)
 
-# Boardgames
+## Boardgames
 
 Second hand is fine too
 
@@ -36,7 +37,7 @@ Second hand is fine too
 | BioShock Infinite: The Siege of Columbia | €76 | [Bol](http://www.bol.com/nl/p/bioshock-infinite-board-game/9200000022203029/)
 | Robinson Crusoe: Adventure on the Cursed Island | €75 | [Bol](http://www.bol.com/nl/p/robinson-crusoe-adv-on-cursed/9200000018019332)
 
-# Misc Items
+## Misc Items
 
 | Item         | Price  | Link
 |--------------|--------|-----
@@ -47,9 +48,9 @@ Second hand is fine too
 | Shaving Bowl | $20-30 | [Amazon](http://www.amazon.com/Edwin-Jagger-Porcelain-Shaving-Handle/dp/B000FIH8XO/)
 | Aeropress Coffee Maker &#9733; | $30 | [Amazon](http://www.amazon.com/AeroPress-Coffee-Espresso-Maker-Filters/dp/B001HBCVX0/)
 | Pantone CMYK Coated and Uncoated Guides | €144 | [Drukwerkdeal](http://www.drukwerkdeal.nl/nl/producten/drukwerk/pantone_producten)
-| B/C Hanwag/Meindl/Lowa Hiking Boots (Vibram Soles) | €200+ | [Bever](http://www.bever.nl/meindl-schoen-island-mfs-active-3d42c00001?id_colour=4246)
+| Lowa Trekker Leather | €170 | [Bigtree](http://www.bigtree.nl/avontuur-en-outdoor-uitrusting/lowa-trekker-trekkingschoenen-bruin-grijs-fid-54378.html)
 
-# Electronics
+## Electronics
 
 | Item         | Price  | Link
 |--------------|--------|-----
