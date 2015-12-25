@@ -1,6 +1,6 @@
 # svdb.co
 
-This is the repo for my personal website, [svdb.co](http://svdb.co). It uses Hexo to serve the content. The theme used is a fork of the original [Casper theme](https://github.com/TryGhost/Casper) for [Ghost](https://github.com/tryghost/ghost/).
+This is the repo for my personal website, [svdb.co](https://svdb.co). It uses Hexo to serve the content. The theme used is a fork of the original [Casper theme](https://github.com/TryGhost/Casper) for [Ghost](https://github.com/tryghost/ghost/).
 
 &mdash; [@svdb](https://twitter.com/svdb)
 

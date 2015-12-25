@@ -4,7 +4,7 @@ https://keybase.io/svdb
 
 I hereby claim:
 
-  * I am an admin of http://svdb.co
+  * I am an admin of https://svdb.co
   * I am svdb (https://keybase.io/svdb) on keybase.
   * I have a public key with fingerprint F5F5 C015 160B 70AE 5FD0  0C12 13DB CAA1 2633 81A7
 
@@ -30,7 +30,7 @@ To claim this, I am signing this object:
         },
         "service": {
             "hostname": "svdb.co",
-            "protocol": "http:"
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
