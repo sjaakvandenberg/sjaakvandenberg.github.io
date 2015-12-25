@@ -3,7 +3,7 @@ meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 
 title= page.title ? page.title + ' | ' + config.title : config.title
 
-meta(name='description', content= post ? post.excerpt : config.description)
+meta(name='description', content= post ? post.intro : config.meta_description)
 meta(name='generator', content= config.title)
 meta(name='keywords', content= theme.keywords)
 meta(name='HandheldFriendly', content='True')
