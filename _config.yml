@@ -5,7 +5,7 @@
 # Site
 title: svdb.co
 meta_description: My name is Sjaak van den Berg and I'm a developer working with Ruby and JavaScript.
-description: My name is Sjaak van den Berg and I'm a developer working with Ruby and JavaScript. You can reach me on Twitter via [@svdb](https://twitter.com/svdb).
+description: My name is <span itemprop='author' itemscope itemtype='https://schema.org/Person'>Sjaak van den Berg</span> and I'm a developer working with Ruby and JavaScript. You can reach me on Twitter via <a href='https://twitter.com/svdb' alt='@svdb on Twitter' title='@svdb on Twitter'>@svdb</a>.
 author: Sjaak van den Berg
 email: mail@svdb.co
 pubkey: 13DB CAA1 2633 81A7

@@ -3,9 +3,9 @@ html
   head
     include _head
     include _mixins
-  body
-    header
+  body(itemscope, itemtype='https://schema.org/WebPage')
+    header(itemscope, itemtype='https://schema.org/WPHeader')
       include _header
-    main
+    main(itemscope, itemprop='mainContentOfPage', itemtype='https://schema.org/Blog')
       include _content
     include _scripts
