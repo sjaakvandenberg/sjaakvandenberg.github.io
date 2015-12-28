@@ -2,12 +2,14 @@
 if is_home()
   h4.page-title Recent Articles
   each post in site.posts.sort('date', 'desc').toArray()
+    - var reading_length = Math.ceil(post.content.replace(/[^a-zA-Z\s]/g, '').split(/[\s]+/).length / 250)
     a.article(href= config.root + post.path)
       article.item(itemscope, itemprop='blogPost', itemtype='https://schema.org/BlogPosting')
         h2(itemprop='headline')= post.title
         span.post-meta
           | Published on
           time(itemprop='datePublished', datetime= post.date.toISOString())= full_date(new Date(post.date), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(post.date), 'H:mm')
+          | , #{reading_length} min read
         p(itemprop='text').post-excerpt= post.intro ? post.intro : post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220)
   footer(itemscope, itemtype='https://schema.org/WPFooter')
     include _footer
