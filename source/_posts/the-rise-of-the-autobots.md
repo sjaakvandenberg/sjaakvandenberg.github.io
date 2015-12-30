@@ -44,7 +44,7 @@ The <abbr title="National Highway Traffic Safety Administration">NHTSA</abbr> ha
 </ol>
 {% endblockquote %}
 
-## They're Already Here
+## They Are Already Here
 
 Level 4 Autonomy is already among us. At Heathrow Airport, autonomous cars built by [Ultra Global PRT](http://www.ultraglobalprt.com/) ferry people back and forth between Heathrow's Terminal 5 and the Business Car Park. The system already meets Kyoto Protocol 2050 projections, delivering a 50% reduction in per-passenger carbon emissions compared with diesel-powered buses and 70% compared with cars.
 
