@@ -24,6 +24,7 @@
 // 0.0 Imports
 
 @import 'normalize.css'
+@import 'nib'
 @import '_*'
 
 // 0.1 Webfonts
@@ -125,6 +126,11 @@ $phone = 'only screen and (max-width: 40em)'
 // 1. Basics
 // ===========================================================================
 
+*
+*:before
+*:after
+  box-sizing border-box
+
 html
   font-size 62.5%
 
@@ -132,7 +138,7 @@ body
   color $body-color
   margin 0
   height 100vh
-  flex-direction column
+  flex-direction column // mobile first
   font-family $body-font
   font-size 1.62rem
   font-weight $body-weight
@@ -156,18 +162,28 @@ main
   -webkit-overflow-scrolling touch
   padding 20px
 
+@keyframes slide
+  0%
+    transform translate3d(0, 0, 0)
+  100%
+    transform translate3d(-240px, -240px, 0)
+
 // ===========================================================================
 // 2. Header
 // ===========================================================================
 
 header
-  // Background settings
-  background-image url($background-header-path)
-  background-position top left
-  background-repeat no-repeat
-  background-size cover
+  background-image linear-gradient(8deg, hsl(220, 40%, 20%), hsl(220, 40%, 4%) 50%)
   flex 1
+  overflow hidden
+  position relative
   text-align center
+  a
+  h1
+  p
+  nav
+    position relative
+    z-index 2
   // Link styling
   a
     color $header-link-color
@@ -213,6 +229,17 @@ header
       &:last-child
         &:after
           content ''
+  .space
+    animation slide 8s linear infinite
+    background-image url('../images/stars.svg')
+    background-position center center
+    background-size 240px
+    height 400%
+    left 0
+    position absolute
+    top 0
+    width 400%
+    z-index 1
 
 // ===========================================================================
 // 3. Main
@@ -267,8 +294,10 @@ main
     padding 40px
     text-align center
     h2
+      break-word normal
       color $body-color
       margin-bottom 16px
+      word-wrap break-word
     p.post-excerpt
       font-size 1.62rem
       line-height 1.6em
@@ -789,6 +818,7 @@ figure.highlight
     background $white
 
   table > tbody > tr > td.gutter
+    background-color #222
     max-width 40px
     text-align right
     pre span.line
