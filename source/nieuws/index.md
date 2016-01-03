@@ -1,6 +1,6 @@
 title: Nederlands Bitcoin Nieuws
 date: 2014-10-09 01:21:50
-updated: 2015-07-25 16:54:16
+updated: 2016-01-03 14:58:16
 ---
 <img class="noshadow nieuws" src="nl.png" alt="Nederlands Bitcoin Nieuws">
 
