@@ -1,6 +1,7 @@
 title: Wishlist
 date: 2014-12-02 19:54:31
 comments: false
+sitemap: false
 ---
 Things with a &#9733; are especially cool. My hiking boot size is UK 11 EU 46, sole B.
 
