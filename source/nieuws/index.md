@@ -6,8 +6,24 @@ updated: 2015-07-25 16:54:16
 
 Dit is het laatste nieuws uit Nederland over bitcoin. Als je zelf een nieuwsartikel aan deze lijst toe wilt voegen, stuur me dan [een berichtje](mailto:mail@svdb.co 'mail@svdb.co').
 
-<hr class="nieuws">
+---
 
+- Frankwatching: [Bitcoin: de nieuwste ontwikkelingen [infographic]](http://www.frankwatching.com/archive/2016/01/03/bitcoin-de-nieuwste-ontwikkelingen-infographic/) (03-01-2016)
+- Emerce: [De Bitcoin in 2016](http://www.emerce.nl/achtergrond/655718) (31-12-2015)
+- Dutch Cowboys: [2016: Het jaar van Bitcoin [Infographic]](http://www.dutchcowboys.nl/online/2016-het-jaar-van-bitcoin-infographic) (29-12-2015)
+- Metro: [Gast vergeet aankoop bitcoins, blijkt tonnen waard](http://www.metronieuws.nl/xl/digitaal/2015/12/gast-vergeet-aankoop-bitcoins-blijkt-tonnen-waard) (10-12-2015)
+- Spitsnieuws: [Australische politie doet inval bij Bitcoin-bedenker](http://www.metronieuws.nl/xl) (09-12-2015)
+- Reformatorisch Dagblad: [Inval bij vermoedelijke bitcoin-bedenker](http://www.refdag.nl/nieuws/economie/inval_bij_vermoedelijke_bitcoin_bedenker_1_958891?localLinksEnabled=false) (09-12-2015)
+- Emerce: [Uitvinder Bitcoin is Australische cryptoloog](http://www.emerce.nl/nieuws/uitvinder-bitcoin-is-australische-cryptoloog) (09-12-2015)
+- Volkskrant Buitenland: [Politie Australië doet inval bij vermeende bedenker bitcoin](http://www.volkskrant.nl/buitenland/politie-australie-doet-inval-bij-vermeende-bedenker-bitcoin~a4204486/) (09-12-2015)
+- Noordhollands Dagblad: ['Inval bij vermoedelijke bitcoin-bedenker'](http://www.noordhollandsdagblad.nl/algemeen/buitenland/article27609186.ece/Inval-bij-vermoedelijke-bitcoin-bedenker) (09-12-2015)
+- Het Belang van Limburg: [Politie valt huis vermoedelijke Bitcoin-oprichter binnen in ...](http://www.hbvl.be/cnt/dmf20151209_02012272/politie-valt-huis-vermoedelijke-bitcoin-oprichter-binnen-in-sydney) (09-12-2015)
+- De Telegraaf: [Politie valt huis 'Bitcoinbedenker' binnen](http://www.telegraaf.nl/digitaal/24852203/__Politie_valt_huis__Bitcoinbedenker__binnen__.html) (09-12-2015)
+- AD Reizen: [Politie doorzoekt huis van vermeende Bitcoin-bedenker](http://www.ad.nl/ad/nl/5597/Economie/article/detail/4204398/2015/12/09/Politie-doorzoekt-huis-van-vermeende-Bitcoin-bedenker.dhtml) (09-12-2015)
+- Het Laatste Nieuws: ['Bedenker Bitcoin' gevonden, politie valt binnen](http://www.hln.be/hln/nl/942/Economie/article/detail/2551038/2015/12/09/Bedenker-Bitcoin-gevonden-politie-valt-binnen.dhtml) (09-12-2015)
+- Noordhollands Dagblad: ['Bedenker Bitcoin is Australiër'](http://www.noordhollandsdagblad.nl/algemeen/technologie/article27608877.ece/Bedenker-Bitcoin-is-Australier) (09-12-2015)
+- De Gelderlander: [Arnhems tankstation accepteert als eerste in Europa bitcoins](http://www.gelderlander.nl/gemeenten/arnhems-tankstation-accepteert-als-eerste-in-europa-bitcoins-1.5499520) (02-12-2015)
+- Het Financieele Dagblad: [ING wil meer uit bitcoin-techniek halen](http://fd.nl/beurs/1127974/ing-sluit-zich-aan-bij-blockchain-collectief) (19-11-2015)
 - Blendle: [How Bitcoin Could Prevent a Future Greece](https://blendle.com/item/bnl-wallstreetjournal-20150714-20_1) (14-07-2015)
 - PCM Web: [Bitcoin-website CloudMnr gehackt](http://www.pcmweb.nl/nieuws/bitcoin-website-cloudmnr-gehackt.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+pcmweb_nieuws+%28PCMWeb+Nieuws%29) (13-07-2015)
 - Emerce: [Prijs Bitcoin stijgt door bredere acceptatie](http://www.emerce.nl/nieuws/prijs-bitcoin-gaat-weer-flink-stijgen) (13-07-2015)
