@@ -37,7 +37,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: '*.md'
+skip_render: README.md
 
 # Archives
 archive_generator:
@@ -123,7 +123,7 @@ autoprefixer:
     - 'last 2 versions'
   safe: false
   exclude:
-  - '*.min.js'
+    - '*.min.js'
 
 # BrowserSync
 ## https://www.browsersync.io/docs/options/
@@ -172,7 +172,7 @@ feed:
   content: true
 
 # Sitemap
-## https://github.com/hexojs/hexo-generator-sitemap
+## https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
 sitemap:
   path: /sitemap.xml
 

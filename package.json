@@ -13,7 +13,7 @@
     "hexo-deployer-git": "0.0.4",
     "hexo-generator-feed": "^1.0.3",
     "hexo-generator-index": "^0.2.0",
-    "hexo-generator-sitemap": "^1.0.1",
+    "hexo-generator-seo-friendly-sitemap": "0.0.11",
     "hexo-renderer-jade": "^0.1.0",
     "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.0",
