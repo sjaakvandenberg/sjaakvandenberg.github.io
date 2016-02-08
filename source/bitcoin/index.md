@@ -99,17 +99,15 @@ Ook zijn bitcoins te verdienen door middel van 'mining'. Mining is het proces wa
 <a name="aob"></a>
 #### Accepteer ook bitcoins!
 
-Wil je ook Bitcoin accepteren in jouw winkel of op je website? Ik kan je verder helpen met de integratie, of verdere uitleg geven hoe het precies werkt. Ik geef lessen over hoe je er in het dagelijks leven mee om kunt gaan, hoe je veilig backups kunt maken van jouw Bitcoin portemonnee, betalingen kunt versturen en ontvangen en het aansluit met je bankrekening.
+Wil je ook Bitcoin accepteren in jouw winkel of op je website? Ik kan je verder helpen met de integratie, of verdere uitleg geven hoe het precies werkt. Hoe je er in het dagelijks leven mee om kunt gaan, hoe je veilig backups kunt maken van jouw Bitcoin portemonnee, betalingen kunt versturen en ontvangen en het aansluit met je bankrekening.
 
-<form method="POST" action="http://formspree.io/mail@svdb.co"><div class="form-column">Ik wil Bitcoin <input id="checkbox_website" type="checkbox" name="where" value="website"><label for="checkbox_website">op mijn website</label><input id="checkbox_store" type="checkbox" name="where" value="store"><label for="checkbox_store">in mijn winkel</label><br /><input name="name" type="name" placeholder="Naam"><input name="_replyto_" type="email" placeholder="Email"><br /><textarea name="message" rows="5"placeholder="Vertel me in het kort over je bedrijf"></textarea><input type="text" name="_gotcha" style="display:none" /><button class="btn simple" type="submit">Accepteer Bitcoin</button></div></form>
+<form method="POST" action="http://formspree.io/mail@svdb.co"><div class="form-column">Ik wil Bitcoin <input id="checkbox_website" type="checkbox" name="where" value="website"><label for="checkbox_website">op mijn website</label><input id="checkbox_store" type="checkbox" name="where" value="store"><label for="checkbox_store">in mijn winkel</label><br /><input name="name" type="text" placeholder="Naam"><input name="_replyto_" type="email" placeholder="Email"><br /><textarea name="message" rows="5"placeholder="Vertel me in het kort over je bedrijf"></textarea><input type="text" name="_gotcha" style="display:none" /><button class="btn simple" type="submit">Accepteer Bitcoin</button></div></form>
 
 ---
 <a name="bodh"></a>
 #### Blijf op de hoogte
 
-Ik schrijf een korte, driemaandelijkse nieuwsbrief waarin ik het nieuws in de wereld van Bitcoin meld. Ik behandel je gegevens vertrouwelijk en deel ze onder geen beding met derde partijen. Je krijgt een bevestigingsmailtje, en dan mijn nieuwsbrief elk kwartaal. Je kunt je op elk moment gemakkelijk afmelden.
-
-<form method="POST" action="//svdb.us9.list-manage.com/subscribe/post?u=4d8b2b856485f03e55397607f&amp;id=6bacb1d7a0"><div class="form-column"><input name="NAME" type="name" placeholder="Naam"><input name="EMAIL" type="name" placeholder="Email"><input type="hidden" name="_subject" value="New form submission" /><div style="position: absolute; left: -5000px;"><input type="text" name="b_4d8b2b856485f03e55397607f_6bacb1d7a0" tabindex="-1" value=""></div><button type="submit" class="btn simple">Verstuur</button></div></form>
+Als je mijn nieuwe artikelen per email wilt ontvangen, kan je je abonneren op mijn [nieuwsbrief](/newsletter 'Nieuwsbrief'). Je kunt je op elk moment uitschrijven, ik stuur je geen spam en zal je gegevens niet delen met derde partijen.
 
 ---
 <a name="mi"></a>
