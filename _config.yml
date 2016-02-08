@@ -17,6 +17,7 @@ timezone: Europe/Amsterdam
 menu:
   Home: '/'
   Articles: '/articles'
+  Newsletter: '/newsletter'
   About: '/about'
 
 # Disqus
