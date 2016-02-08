@@ -101,7 +101,20 @@ Ook zijn bitcoins te verdienen door middel van 'mining'. Mining is het proces wa
 
 Wil je ook Bitcoin accepteren in jouw winkel of op je website? Ik kan je verder helpen met de integratie, of verdere uitleg geven hoe het precies werkt. Hoe je er in het dagelijks leven mee om kunt gaan, hoe je veilig backups kunt maken van jouw Bitcoin portemonnee, betalingen kunt versturen en ontvangen en het aansluit met je bankrekening.
 
-<form method="POST" action="http://formspree.io/mail@svdb.co"><div class="form-column">Ik wil Bitcoin <input id="checkbox_website" type="checkbox" name="where" value="website"><label for="checkbox_website">op mijn website</label><input id="checkbox_store" type="checkbox" name="where" value="store"><label for="checkbox_store">in mijn winkel</label><br /><input name="name" type="text" placeholder="Naam"><input name="_replyto_" type="email" placeholder="Email"><br /><textarea name="message" rows="5"placeholder="Vertel me in het kort over je bedrijf"></textarea><input type="text" name="_gotcha" style="display:none" /><button class="btn simple" type="submit">Accepteer Bitcoin</button></div></form>
+<form action="//formspree.io/mail@svdb.co" method="POST">
+  <div class="form-column">
+    Ik wil Bitcoin
+    <input id="checkbox_website" type="checkbox" name="where" value="website" />
+    <label for="checkbox_website">op mijn website</label>
+    <input id="checkbox_store" type="checkbox" name="where" value="store" />
+    <label for="checkbox_store">in mijn winkel</label><br />
+    <input name="name" type="text" placeholder="Naam" />
+    <input name="email" type="email" placeholder="Email" required/>
+    <textarea name="message" rows="5" placeholder="Vertel me in het kort over je bedrijf"></textarea>
+    <input type="text" name="_gotcha" style="display:none" />
+    <button class="btn simple" type="submit">Accepteer Bitcoin</button>
+  </div>
+</form>
 
 ---
 <a name="bodh"></a>
