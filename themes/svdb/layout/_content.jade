@@ -41,10 +41,11 @@ if is_page() && page.title.toLowerCase() == 'articles'
 else if is_page()
   article.full
     h1(itemprop='headline')= page.title
-    if page.updated
-      span.post-meta
-        | Last updated on
-        time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
+    if page.layout != 'clean'
+      if page.updated
+        span.post-meta
+          | Last updated on
+          time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
     != page.content
   include _comments
 else if is_post()
