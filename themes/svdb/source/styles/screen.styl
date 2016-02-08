@@ -135,7 +135,7 @@ body
   height 100vh
   flex-direction column // mobile first
   font-family $body-font
-  font-size 1.62rem
+  font-size 1.8rem
   font-weight $body-weight
   line-height 1.6em
 
@@ -205,7 +205,7 @@ header
   p
     color $description-color
     font-family $body-font
-    font-size 1.62rem
+    font-size 1.8rem
     font-weight $body-weight
     letter-spacing 0
     margin 0
@@ -269,7 +269,7 @@ main
   .page-title
     color $shade-gray
     font-family $body-font
-    font-size 1.62rem
+    font-size 1.8rem
     font-style italic
     font-weight $body-weight
     margin 0
@@ -294,7 +294,7 @@ main
       margin-bottom 16px
       word-wrap break-word
     p.post-excerpt
-      font-size 1.62rem
+      font-size 1.8rem
       line-height 1.6em
       margin 16px 0 0 0
     &:after
@@ -388,13 +388,15 @@ main
         display inline-block
         text-align left
         width 100%
-        input[type="name"]
+        // TODO
+        input[type="text"]
         input[type="email"]
           width 100%
         input
         textarea
           padding .5em .6em
-          margin 0
+          margin .5em .5em .5em 0
+          // margin 0
           border 1px solid $light-gray
           box-shadow inset 0 1px 3px $shade-gray
           border-radius 2px
@@ -417,7 +419,7 @@ main
           color $white
           font-family $button-font
           letter-spacing 1px
-          margin .5em .5em .5em 0
+          margin .25em .5em .5em 0
           padding .1em .6em
           white-space nowrap
           text-transform uppercase
@@ -775,7 +777,13 @@ margin on the iframe, cause it breaks stuff. */
     margin-top 0
 
 table > tbody > tr > td
-  padding-right 10px
+  padding-right 20px
+
+figure.caption
+  border 1px solid rgb(34, 34, 34)
+  border-radius .3em
+  box-shadow 0 1px 0 rgba(0, 0, 0, .3)
+  margin 1em 0 2.1em 0
 
 /* Hexo: Syntax Highlighter */
 figure.highlight
@@ -794,6 +802,8 @@ figure.highlight
     td.gutter
       display none
 
+figure.highlight
+figure.caption
   figcaption
     padding 7px 10px
     font-family 'Open Sans', sans-serif
@@ -804,6 +814,7 @@ figure.highlight
 
     a
       margin-left .3em
+      color $blue
 
   table
     margin 0
@@ -857,12 +868,15 @@ figure.highlight
     main
       flex 2
       padding 40px
-      form
-        .form-column
-          input[type="name"]
-          input[type="email"]
-            width 35%
-            margin .5em .5em .5em 0
+      article.full
+        form
+          .form-column
+            input[type="text"]
+            input[type="email"]
+              width 35%
+              margin .5em .5em .5em 0
+            button
+              margin .25em .5em .5em 0
 
 // ===========================================================================
 // 7. Code Theme
