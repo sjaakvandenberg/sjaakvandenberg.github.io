@@ -4,7 +4,7 @@ updated: 2016-01-03 14:58:16
 ---
 <img class="noshadow nieuws" src="nl.png" alt="Nederlands Bitcoin Nieuws">
 
-Dit is het laatste nieuws uit Nederland over bitcoin. Als je zelf een nieuwsartikel aan deze lijst toe wilt voegen, stuur me dan [een berichtje](mailto:mail@svdb.co 'mail@svdb.co').
+Dit is het laatste nieuws uit Nederland over bitcoin. Als je zelf een nieuwsartikel aan deze lijst toe wilt voegen, stuur me dan [een berichtje](&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#105;&#108;&#64;&#115;&#118;&#100;&#98;&#46;&#99;&#111; 'mail@svdb.co').
 
 ---
 
