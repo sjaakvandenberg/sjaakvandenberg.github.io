@@ -6,7 +6,7 @@ comments: false
 ---
 If you'd like to receive my posts in your email, sign up here. I will not spam you, and you can unsubscribe at any moment using the link at the bottom of the email.
 
-<form action="//formspree.io/mail@svdb.co" method="POST">
+<form action="//formspree.io/&#109;&#97;&#105;&#108;&#64;&#115;&#118;&#100;&#98;&#46;&#99;&#111;" method="POST">
   <div class="form-column">
     <input type="email" name="email" placeholder="Email" required />
     <input type="hidden" name="_subject" value="Newsletter Bye" />

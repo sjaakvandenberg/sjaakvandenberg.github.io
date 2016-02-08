@@ -101,7 +101,7 @@ Ook zijn bitcoins te verdienen door middel van 'mining'. Mining is het proces wa
 
 Wil je ook Bitcoin accepteren in jouw winkel of op je website? Ik kan je verder helpen met de integratie, of verdere uitleg geven hoe het precies werkt. Hoe je er in het dagelijks leven mee om kunt gaan, hoe je veilig backups kunt maken van jouw Bitcoin portemonnee, betalingen kunt versturen en ontvangen en het aansluit met je bankrekening.
 
-<form action="//formspree.io/mail@svdb.co" method="POST">
+<form action="//formspree.io/&#109;&#97;&#105;&#108;&#64;&#115;&#118;&#100;&#98;&#46;&#99;&#111;" method="POST">
   <div class="form-column">
     Ik wil Bitcoin
     <input id="checkbox_website" type="checkbox" name="where" value="website" />
