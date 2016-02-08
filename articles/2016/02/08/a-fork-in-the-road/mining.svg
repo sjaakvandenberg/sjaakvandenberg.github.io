@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="333.63" width="460" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <desc>JavaScript chart by amCharts 3.18.3</desc>
+ <g transform="matrix(1.2991 0 0 1.2991 -72.444 -.54213)">
+  <g>
+   <path d="m240 108-8.34-44.221a45 45 0 0 1 8.34 -0.779v45z" stroke-opacity="0" cs="1000,1000" fill="#0d52d1"/>
+   <path d="m236.5 63.5-2-46h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108-18.69-40.936a45 45 0 0 1 10.349 -3.2846l8.34 44.221z" stroke-opacity="0" cs="1000,1000" fill="#0d8ecf"/>
+   <path d="m226.5 65.5-6-30h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108-32.87-30.731a45 45 0 0 1 14.184 -10.205l18.69 40.936z" stroke-opacity="0" cs="1000,1000" fill="#04d215"/>
+   <path d="m214.5 72.5-12-17h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108-42.49-14.808a45 45 0 0 1 9.6214 -15.923l32.87 30.731z" stroke-opacity="0" cs="1000,1000" fill="#b0de09"/>
+   <path d="m202.5 85.5-17-10h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108-44.685 5.3132a45 45 0 0 1 2.1914 -20.121l42.49 14.811z" stroke-opacity="0" cs="1000,1000" fill="#f8ff01"/>
+   <path d="m196.5 103.5-20-2h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108-24.275 37.891a45 45 0 0 1 -20.41 -32.58l44.69-5.31z" stroke-opacity="0" cs="1000,1000" fill="#fcd202"/>
+   <path d="m202.5 132.5-17 10h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108v-45a45 45 0 0 1 44.673 39.588l-44.67 5.41z" stroke-opacity="0" cs="1000,1000" fill="#ff0f00"/>
+   <path d="m270.5 75.5 13-15h8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108 44.673-5.4123a45 45 0 0 1 -24.57 45.67l-20.1-40.26z" stroke-opacity="0" cs="1000,1000" fill="#f60"/>
+   <path d="m279.5 129.5 18 10h8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m240 108 20.1 40.262a45 45 0 0 1 -44.375 -2.3709l24.28-37.89z" stroke-opacity="0" cs="1000,1000" fill="#ff9e01"/>
+   <path d="m238.5 153.5-1 20h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(-396.95 -5.4913)">
+  <g transform="translate(412.73 21.285)">
+   <text font-size="11px" transform="translate(295,60)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">F2Pool: 23.08%</tspan>
+   </text>
+  </g>
+  <g transform="translate(417.02 44.813)">
+   <text font-size="11px" transform="translate(309,139)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">AntPool: 19.55%</tspan>
+   </text>
+  </g>
+  <g transform="translate(393.69 53.969)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(225,173)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">BitFury: 16.44%</tspan>
+   </text>
+  </g>
+  <g transform="translate(377.86 45.762)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(173,142)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">BTCC Pool: 14.05%</tspan>
+   </text>
+  </g>
+  <g transform="translate(375.22 33.423)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(164,101)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">BW.COM: 7.22%</tspan>
+   </text>
+  </g>
+  <g transform="translate(377.71 25.88)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(173,75)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">KnCMiner: 6.63%</tspan>
+   </text>
+  </g>
+  <g transform="translate(382.8 19.985)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(190,55)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">Slush: 6.22%</tspan>
+   </text>
+  </g>
+  <g transform="translate(388.4 13.793)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(208,35)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">21 Inc.: 3.85%</tspan>
+   </text>
+  </g>
+  <g transform="translate(392.64 7.3456)">
+   <text font-size="11px" style="text-anchor:end" transform="translate(222,17)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+    <tspan y="6" x="0">Eligius: 2.97%</tspan>
+   </text>
+  </g>
+ </g>
+ <g transform="translate(-70.495 335.68)"></g>
+ <path d="m0.5 240.13h459v93h-459z" stroke-opacity="0" fill-opacity="0" cs="100,100"/>
+ <g cursor="pointer" transform="translate(17 250.63)">
+  <circle transform="translate(8,8)" stroke="#ff0f00" cy="0" cx="0" r="8" fill="#ff0f00"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">F2Pool</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">5,882</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <g cursor="pointer" transform="translate(164 250.63)">
+  <circle transform="translate(8,8)" stroke="#f60" cy="0" cx="0" r="8" fill="#f60"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">AntPool</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">4,982</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <circle stroke="#ff9e01" cy="258.63" cx="319" r="8" fill="#ff9e01"/>
+ <text font-size="11px" y="263.63293" x="331.99997" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+  <tspan y="263.63293" x="331.99997">BitFury</tspan>
+ </text>
+ <text style="text-anchor:end" font-size="11px" y="263.63293" x="442.99997" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">4,189</text>
+ <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="250.63" x="327" fill="#fff"/>
+ <g cursor="pointer" transform="translate(17 278.63)">
+  <circle transform="translate(8,8)" stroke="#fcd202" cy="0" cx="0" r="8" fill="#fcd202"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">BTCC Pool</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">3,580</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <g cursor="pointer" transform="translate(164 278.63)">
+  <circle transform="translate(8,8)" stroke="#f8ff01" cy="0" cx="0" r="8" fill="#f8ff01"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">BW.COM</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">1,840</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <g cursor="pointer" transform="translate(311 278.63)">
+  <circle transform="translate(8,8)" stroke="#b0de09" cy="0" cx="0" r="8" fill="#b0de09"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">KnCMiner</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">1,689</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <g cursor="pointer" transform="translate(17 306.63)">
+  <circle transform="translate(8,8)" stroke="#04d215" cy="0" cx="0" r="8" fill="#04d215"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">Slush</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">1,585</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <g cursor="pointer" transform="translate(164 306.63)">
+  <circle transform="translate(8,8)" stroke="#0d8ecf" cy="0" cx="0" r="8" fill="#0d8ecf"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">21 Inc.</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">981</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+ <g cursor="pointer" transform="translate(311 306.63)">
+  <circle transform="translate(8,8)" stroke="#0d52d1" cy="0" cx="0" r="8" fill="#0d52d1"/>
+  <text font-size="11px" transform="translate(21,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">
+   <tspan y="6" x="0">Eligius</tspan>
+  </text>
+  <text style="text-anchor:end" font-size="11px" transform="translate(132,7)" y="6" font-family="&apos;Droid Serif&apos;, Georgia, serif" fill="#141414">756</text>
+  <rect fill-opacity="0.005" rx="0" ry="0" height="18" width="116" y="0" x="16" fill="#fff"/>
+ </g>
+</svg>

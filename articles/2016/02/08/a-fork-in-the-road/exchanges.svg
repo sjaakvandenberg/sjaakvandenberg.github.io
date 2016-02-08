@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="160" width="360" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g transform="translate(-19.613 -46.514)">
+  <path d="m0.5 0.5h398v319h-398z" stroke-opacity="0" fill-opacity="0" cs="100,100"/>
+ </g>
+ <g transform="translate(-9.6128 -50.514)">
+  <path d="m199.5 160-4.4515-45.784a46 46 0 0 1 4.45 -0.22v46z" stroke-opacity="0" cs="1000,1000" fill="#04d215"/>
+  <path d="m197.5 114.5-1-20h8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  <path d="m199.5 160-10.098-44.878a46 46 0 0 1 5.6462 -0.90609l4.45 45.79z" stroke-opacity="0" cs="1000,1000" fill="#b0de09"/>
+  <path d="m192.5 115.5-3-58h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  <g>
+   <path d="m199.5 160-17.965-42.347a46 46 0 0 1 7.8669 -2.531l10.09 44.88z" stroke-opacity="0" cs="1000,1000" fill="#f8ff01"/>
+   <path d="m186.5 117.5-7-40h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m199.5 160-26.601-37.528a46 46 0 0 1 8.6366 -4.8187l17.96 42.35z" stroke-opacity="0" cs="1000,1000" fill="#fcd202"/>
+   <path d="m177.5 120.5-10-23h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <path d="m199.5 160-41.43-19.99a46 46 0 0 1 14.83 -17.54l26.6 37.53z" stroke-opacity="0" cs="1000,1000" fill="#ff9e01"/>
+  <path d="m165.5 131.5-16-13h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  <g>
+   <path d="m199.5 160-28.2 36.342a46 46 0 0 1 -13.23 -56.33l41.43 19.99z" stroke-opacity="0" cs="1000,1000" fill="#f60"/>
+   <path d="m155.5 170.5-19 5h-8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+  <g>
+   <path d="m199.5 160v-46a46 46 0 1 1 -28.2 82.342l28.2-36.34z" stroke-opacity="0" cs="1000,1000" fill="#ff0f00"/>
+   <path d="m243.5 175.5 19 6h8" stroke-opacity=".2" stroke="#000" cs="100,100" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(-9.6128 -50.514)">
+  <text font-size="11px" transform="translate(274,181)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">OKCoin: 60.50%</tspan>
+  </text>
+  <text font-size="11px" style="text-anchor:end" transform="translate(124,175)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">BTC China: 21.65%</tspan>
+  </text>
+  <text font-size="11px" style="text-anchor:end" transform="translate(137,118)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">Bitfinex: 8.03%</tspan>
+  </text>
+  <text font-size="11px" style="text-anchor:end" transform="translate(155,97)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">Coinbase: 3.43%</tspan>
+  </text>
+  <text font-size="11px" style="text-anchor:end" transform="translate(167,77)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">Bitstamp: 2.86%</tspan>
+  </text>
+  <text font-size="11px" style="text-anchor:end" transform="translate(177,57)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">BTC-E: 1.98%</tspan>
+  </text>
+  <text font-size="11px" transform="translate(208,94)" y="6" font-family="Verdana" fill="#000000">
+   <tspan y="6" x="0">Kraken: 1.54%</tspan>
+  </text>
+ </g>
+ <g transform="translate(-19.613 -46.514)"></g>
+</svg>
