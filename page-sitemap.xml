@@ -7,8 +7,15 @@
     </url>
     
     <url>
+        <loc>https://svdb.co/articles/index.html</loc>
+        <lastmod>2016-02-08T13:51:28.981Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://svdb.co/about/index.html</loc>
-        <lastmod>2016-02-08T11:19:15.054Z</lastmod>
+        <lastmod>2016-02-08T13:19:56.694Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -23,13 +30,6 @@
     <url>
         <loc>https://svdb.co/README.html</loc>
         <lastmod>2016-01-01T11:33:50.543Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://svdb.co/articles/index.html</loc>
-        <lastmod>2015-12-23T10:28:00.843Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
