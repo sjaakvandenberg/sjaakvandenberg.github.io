@@ -1,5 +1,5 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
@@ -132,38 +132,53 @@ autoprefixer:
 ## https://www.browsersync.io/docs/options/
 browsersync:
   logSnippet: false
-  logLevel: "info" # info, debug, silent
+  logLevel: 'info' # info, debug, silent
   logConnections: true
   logFileChanges: true
   reloadOnRestart: true
   injectChanges: true
 
-# CleanCSS
-## https://github.com/hexojs/hexo-clean-css
-clean_css:
+# Minification
+## https://github.com/unhealthy/hexo-all-minifier
+
+# HTML Minifier
+## https://github.com/kangax/html-minifier
+html_minifier:
+  enable: true
+  removeComments: true
+  useShortDoctype: true
+  collapseWhitespace: true
+  exclude:
+
+# Clean CSS
+## https://github.com/jakubpawlowicz/clean-css
+css_minifier:
+  enable: true
   compatibility: true
   processImport: true
   exclude:
     - '*.min.css'
 
-# HTMLMinifier
-## https://github.com/hexojs/hexo-html-minifier
-# html_minifier:
-#   collapseWhitespace: true
-#   exclude:
-#   removeComments: true
-#   useShortDoctype: true
-#   minifyJS: true
-
-# Uglify
-## https://github.com/hexojs/hexo-uglify
-uglify:
+# UglifyJS
+## http://lisperator.net/uglifyjs/
+js_minifier:
+  enable: true
   mangle: true # single letter vars
   output:
-  compress:
   comments: # `all` to keep
+  compress:
   exclude:
     - '*.min.js'
+
+# ImageMin
+## https://github.com/imagemin/imagemin
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
 
 # RSS Feed
 ## https://github.com/hexojs/hexo-generator-feed
@@ -187,7 +202,7 @@ server:
   ip: 0.0.0.0
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:sjaakvandenberg/sjaakvandenberg.github.io.git
